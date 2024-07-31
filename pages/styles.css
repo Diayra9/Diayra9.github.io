@@ -18,8 +18,7 @@ body {
     padding: 22.5px 32px;
     width: 100%;
     box-sizing: border-box;
-    position: fixed;
-    /* Menjadikan header tetap di atas */
+    position: fixed; /* Menjadikan header tetap di atas */
     top: 0;
     z-index: 1000;
 }
@@ -152,7 +151,7 @@ body {
 }
 
 
-/***** Halaman Experts *****/
+/***** HALAMAN EXPERTS *****/
 .experts {
     display: flex;
     justify-content: center;
@@ -219,4 +218,125 @@ body {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.9);
     margin: 5px 0 0;
+}
+
+
+/***** FOOTER *****/
+.footer {
+    background: rgba(68, 15, 14, 0.9);
+    padding: 40px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.our-location,
+.contact-us,
+.social-media {
+    font-size: 24px;
+    margin-bottom: 50px;
+    color: #B19A21;
+}
+
+.locations,
+.working-hours-admin,
+.working-hours-clinic,
+.contact-number,
+.instagram,
+.shopee {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.ternellebeaut {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.all-rights-reserved {
+    font-size: 16px;
+}
+
+.working-hours-admin,
+.working-hours-clinic {
+    margin-bottom: 20px;
+}
+
+.footer-content .column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-content .column p {
+    margin: 0;
+}
+
+.line-4,
+.line-5,
+.line-6 {
+    height: 2px;
+    background: #B19A21;
+    width: 200px;
+    top: 80px;
+    position: absolute;
+}
+
+.line-4 {
+    left: 90px;
+}
+
+.line-6 {
+    left: 490px;
+}
+
+.line-5 {
+    right: 260px;
+}
+
+.footer-bottom {
+    background: rgba(68, 15, 14, 0.9);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.footer-content-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    color: #FFFFFF;
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+.all-rights-reserved {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
 }
