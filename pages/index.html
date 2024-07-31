@@ -10,158 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="header.css" /> -->
-    <style>
-        :root {
-            --single-line-body-base-font-family: 'Inter', sans-serif;
-            --single-line-body-base-font-weight: 400;
-            --single-line-body-base-font-size: 16px;
-            --single-line-body-base-line-height: 1;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .header {
-            background: #440F0E;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 22.5px 32px;
-            width: 100%;
-            box-sizing: border-box;
-            position: fixed; /* Menjadikan header tetap di atas */
-            top: 0;
-            /* z-index: 1000; */
-        }
-
-        .header .header-salma {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .header .eternelle {
-            font-family: 'Gilda Display', serif;
-            font-size: 32px;
-            color: white;
-        }
-
-        .container a,
-        .container button {
-            margin: 0 12px;
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-
-        .container button {
-            padding: 7px 15px;
-            border-radius: 8px;
-        }
-
-        .container .button-6 {
-            background: #B19A21;
-            color: #FFFFFF;
-            border: 1px solid #B19A21;
-        }
-        .container .button-6:hover {
-            background: #c9b036;
-            border: 1px solid #B19A21;
-        }
-
-        .container .appointment {
-            background: #6E2F2C;
-            color: #FFFFFF;
-            border: 1px solid #522504;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-        .container .appointment:hover {
-            background: #7e3c39;
-            border: 1px solid #6E2F2C;
-        }
-
-        .hero {
-            text-align: center;
-            color: #000000;
-            padding-top: 12%;
-        }
-
-        .hero .main-title {
-            font-family: 'Gilda Display', serif;
-            font-size: 70px;
-        }
-
-        .hero .main-title .highlight-text{
-            color: #ffffff;
-        }
-
-        .hero .subtitle {
-            font-size: 20px;
-            font-weight: 600;
-            color: #501E1E;
-        }
-
-        .cta-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .cta-buttons button {
-            padding: 12px;
-            border: none;
-            background: #6E2F2C;
-            color: white;
-            cursor: pointer;
-            border: 1px solid #522504;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 8px;
-        }
-
-        .cta-buttons .location-button {
-            background: #FFFFFF;
-            color: #000000;
-            border: 1px solid #ffffff;
-        }
-
-        .cta-buttons .cta-button:hover {
-            background: #944945;
-            border: 1px solid #a75854;
-        }
-
-        .cta-buttons .location-button:hover {
-            background: #d4d4d4;
-            border: 1px solid #e7e7e7;
-        }
-
-        .rectangle-1 {
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-            background: rgba(217, 217, 217, 0.47);
-            position: absolute;
-            width: 100%;
-            height: 691px;
-            z-index: -1;
-        }
-
-        .klinik-1 {
-            background: url('../assets/images/klinik_1.jpeg') 50% / cover no-repeat;
-            position: absolute;
-            left: 0;
-            right: 0;
-            height: 691px;
-            z-index: -2;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -184,12 +33,52 @@
     <div class="rectangle-1"></div>
 
     <div class="hero">
-        <h1 class="main-title">Étern<span class="highlight-text">e</span>lle B<span class="highlight-text">e</span>auté</h1>
+        <h1 class="main-title">Étern<span class="highlight-text">e</span>lle B<span class="highlight-text">e</span>auté
+        </h1>
         <p class="subtitle">Great experience with the best treatment</p>
         <div class="cta-buttons">
             <button class="cta-button">Our Treatment</button>
             <button class="cta-button location-button">Our Location</button>
             <button class="cta-button">Our Product</button>
+        </div>
+    </div>
+
+    <div class="experts">
+        <div class="container-2">
+            <div class="meet-our-experts">
+                Meet Our Experts
+            </div>
+            <div class="line"></div>
+            <div class="container-3">
+                <div class="expert">
+                    <img src="../assets/images/fu_1.jpeg" alt="Dr. Reza Graha" class="expert-image">
+                    <div class="expert-info">
+                        <h3>Dr. Reza Graha, Sp.KK</h3>
+                        <p>Skin and Venereology Specialist</p>
+                    </div>
+                </div>
+                <div class="expert">
+                    <img src="../assets/images/fu_11.jpeg" alt="Dr. Alina Pratiwi" class="expert-image">
+                    <div class="expert-info">
+                        <h3>Dr. Alina Pratiwi, Sp.KK</h3>
+                        <p>Skin and Venereology Specialist</p>
+                    </div>
+                </div>
+                <div class="expert">
+                    <img src="../assets/images/download_2.jpeg" alt="Dr. Clara Riana" class="expert-image">
+                    <div class="expert-info">
+                        <h3>Dr. Clara Riana, M.B.B.Ch.</h3>
+                        <p>Dermatologist</p>
+                    </div>
+                </div>
+                <div class="expert">
+                    <img src="../assets/images/image.jpeg" alt="Dr. Maya Kusuma" class="expert-image">
+                    <div class="expert-info">
+                        <h3>Dr. Maya Kusuma, S.Ked.</h3>
+                        <p>Aesthetic Doctor</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
