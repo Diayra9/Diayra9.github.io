@@ -71,14 +71,14 @@ body {
     border: 1px solid #B19A21;
 }
 
-.container .appointment {
+.container .appointment-1 {
     background: #6E2F2C;
     color: #FFFFFF;
     border: 1px solid #522504;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.container .appointment:hover {
+.container .appointment-1:hover {
     background: #7e3c39;
     border: 1px solid #6E2F2C;
 }
@@ -522,4 +522,69 @@ h2 .highlight {
 .logo-img {
     width: 100px;
     height: auto;
+}
+
+
+/***** RESERVATION *****/
+.appointment {
+  padding-top: 140px;
+  padding-bottom: 70px;
+  width: 80%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.appointment-online {
+  font-family: 'Gilda Display', serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #401B01;
+  text-align: center;
+}
+
+.line-1 {
+  background: #B19A21;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 20px;
+}
+
+.line-2 {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 400;
+  font-size: 13px;
+  color: #501E1E;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  border-radius: 20px;
+  background: #D9D9D9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
 }
