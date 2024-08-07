@@ -525,7 +525,9 @@ h2 .highlight {
 }
 
 
-/***** RESERVATION *****/
+
+/***** HALAMAN BARU *****/
+/***** APPOINTMENT *****/
 .appointment {
   padding-top: 140px;
   padding-bottom: 70px;
@@ -587,4 +589,61 @@ label {
   padding: 10px;
   font-size: 14px;
   width: 100%;
+}
+
+
+/***** HALAMAN MEMBERSHIP *****/
+.membership {
+    font-family: 'Gilda Display', serif;
+    margin: auto;
+    width: 80%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+    padding-bottom: 70px;
+}
+
+.container-1 {
+    /* background-color: #ffffff; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.form-section {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.gender-options {
+    display: flex;
+    gap: 20px;
+}
+
+.membership-online {
+    font-family: 'Gilda Display', serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #401B01;
+    text-align: center;
 }
