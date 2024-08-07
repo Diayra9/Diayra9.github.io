@@ -150,6 +150,85 @@ body {
     z-index: -2;
 }
 
+.treatment-section {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-family: 'Gilda Display', serif;
+    font-size: 28px;
+    color: #B19A21;
+    margin-bottom: 20px;
+}
+
+h2 .highlight {
+    color: #8B4513;
+}
+
+.intro-text {
+    font-size: 18px;
+    color: #5A5A5A;
+    margin-bottom: 40px;
+}
+
+.separator {
+    height: 60px; /* Sesuaikan tinggi sesuai kebutuhan */
+    background-color: #f0f0f0; /* Warna latar belakang opsional */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* CSS untuk menata kartu perawatan */
+.treatment-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Jarak antara kartu perawatan */
+}
+
+.treatment-card {
+    display: flex; /* Menyusun gambar dan teks berdampingan */
+    align-items: center; /* Menyelaraskan item di tengah secara vertikal */
+    background-color: #EAEAEA;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(50% - 30px); /* Mengatur lebar kartu perawatan */
+    max-width: 500px; /* Lebar maksimum kartu */
+    padding: 10px;
+}
+
+.treatment-image {
+    width: 100px; /* Menyusutkan lebar gambar */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    margin-right: 15px; /* Jarak antara gambar dan teks */
+    border-radius: 5px; /* Sudut bulat opsional untuk gambar */
+}
+
+.treatment-info {
+    flex: 1; /* Mengisi sisa ruang di sebelah gambar */
+    text-align: left; /* Menyelaraskan teks ke kiri */
+}
+
+.treatment-info h3 {
+    font-family: 'Gilda Display', serif;
+    font-size: 24px;
+    color: #B19A21;
+    margin: 0 0 10px 0;
+}
+
+.treatment-info p {
+    font-size: 16px;
+    color: #5A5A5A;
+}
 
 /***** HALAMAN EXPERTS *****/
 .experts {
@@ -223,33 +302,35 @@ body {
 
 /***** FOOTER *****/
 .footer {
-    background: rgba(68, 15, 14, 0.9);
-    padding: 40px;
+    background: rgba(68, 15, 14, 0.9); /* Latar belakang tetap */
+    padding: 40px 20px; /* Padding atas/bawah 40px dan kiri/kanan 20px */
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    width: 100%;
+    box-sizing: border-box; /* Agar padding termasuk dalam ukuran lebar */
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1200px; /* Konsisten dengan header dan treatment */
     margin-bottom: 20px;
 }
 
 .column {
     flex: 1;
-    margin: 0 20px;
+    margin: 0 20px; /* Margin kiri/kanan 20px */
 }
 
 .our-location,
 .contact-us,
 .social-media {
     font-size: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 20px; /* Mengurangi jarak bawah */
     color: #B19A21;
 }
 
@@ -261,6 +342,7 @@ body {
 .shopee {
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 10px; /* Mengurangi jarak bawah */
 }
 
 .ternellebeaut {
@@ -274,7 +356,7 @@ body {
 
 .working-hours-admin,
 .working-hours-clinic {
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Mengurangi jarak bawah */
 }
 
 .footer-content .column {
@@ -313,15 +395,18 @@ body {
     background: rgba(68, 15, 14, 0.9);
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 10px 20px; /* Padding atas/bawah 10px dan kiri/kanan 20px */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-content-2 {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1200px; /* Konsisten dengan header dan treatment */
     color: #FFFFFF;
+    align-items: center; /* Meratakan vertikal */
 }
 
 .left-content {
@@ -336,7 +421,7 @@ body {
 }
 
 .logo-img {
-    width: 50px;
+    width: 40px; /* Sesuaikan ukuran logo */
     height: auto;
     margin-right: 10px;
 }
