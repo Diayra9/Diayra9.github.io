@@ -8,8 +8,10 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    background-color: rgb(245, 243, 243);
 }
 
+/***** HEADER *****/
 .header {
     background: #440F0E;
     display: flex;
@@ -18,7 +20,7 @@ body {
     padding: 22.5px 32px;
     width: 100%;
     box-sizing: border-box;
-    position: fixed; /* Menjadikan header tetap di atas */
+    position: fixed;
     top: 0;
     z-index: 1000;
 }
@@ -34,6 +36,10 @@ body {
     font-family: 'Gilda Display', serif;
     font-size: 32px;
     color: white;
+}
+
+.highlight{
+    color: #B19A21;
 }
 
 .container a,
@@ -65,22 +71,27 @@ body {
     border: 1px solid #B19A21;
 }
 
-.container .appointment {
+.container .appointment-1 {
     background: #6E2F2C;
     color: #FFFFFF;
     border: 1px solid #522504;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.container .appointment:hover {
+.container .appointment-1:hover {
     background: #7e3c39;
     border: 1px solid #6E2F2C;
 }
 
+
+/***** BANNER *****/
 .hero {
     text-align: center;
     color: #000000;
     padding-top: 12%;
+    padding-bottom: 8%;
+    position: relative;
+    z-index: 1;
 }
 
 .hero .main-title {
@@ -150,23 +161,23 @@ body {
     z-index: -2;
 }
 
+/***** HALAMAN TREATMENT *****/
 .treatment-section {
     padding: 50px;
     background-color: #ffffff;
     text-align: center;
-}
-
-.container {
-    max-width: 1200px;
+    position: relative;
+    width: 75%;
     margin: 0 auto;
-    padding: 0 20px;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 h2 {
     font-family: 'Gilda Display', serif;
-    font-size: 28px;
+    font-size: 35px;
     color: #B19A21;
-    margin-bottom: 20px;
 }
 
 h2 .highlight {
@@ -174,48 +185,51 @@ h2 .highlight {
 }
 
 .intro-text {
-    font-size: 18px;
+    font-size: 14px;
     color: #5A5A5A;
-    margin-bottom: 40px;
 }
 
 .separator {
-    height: 60px; /* Sesuaikan tinggi sesuai kebutuhan */
-    background-color: #f0f0f0; /* Warna latar belakang opsional */
+    background-color: #f0f0f0;
     width: 100%;
     box-sizing: border-box;
 }
 
-/* CSS untuk menata kartu perawatan */
 .treatment-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; /* Jarak antara kartu perawatan */
+    gap: 20px;
+    margin-top: 5%;
 }
 
 .treatment-card {
-    display: flex; /* Menyusun gambar dan teks berdampingan */
-    align-items: center; /* Menyelaraskan item di tengah secara vertikal */
+    display: flex;
+    align-items: center;
     background-color: #EAEAEA;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: calc(50% - 30px); /* Mengatur lebar kartu perawatan */
-    max-width: 500px; /* Lebar maksimum kartu */
+    width: calc(50% - 30px);
+    max-width: 500px;
     padding: 10px;
 }
 
 .treatment-image {
-    width: 100px; /* Menyusutkan lebar gambar */
-    height: auto; /* Mempertahankan rasio aspek gambar */
-    margin-right: 15px; /* Jarak antara gambar dan teks */
-    border-radius: 5px; /* Sudut bulat opsional untuk gambar */
+    width: auto;
+    height: 120px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.treatment-logo {
+    width: 100px;
+    height: auto;
 }
 
 .treatment-info {
-    flex: 1; /* Mengisi sisa ruang di sebelah gambar */
-    text-align: left; /* Menyelaraskan teks ke kiri */
+    flex: 1;
+    text-align: left;
 }
 
 .treatment-info h3 {
@@ -230,14 +244,128 @@ h2 .highlight {
     color: #5A5A5A;
 }
 
+
+/***** HALAMAN PRODUCTS *****/
+.product {
+    background-color: rgb(245, 243, 243);
+    display: flex;
+    flex-direction: column;
+    padding: 100px 80px 100px 80px;
+    width: 1366px;
+    box-sizing: border-box;
+    margin-top: 3%;
+}
+
+.product .rekomendasi-produk {
+    margin-bottom: 15px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Gilda Display';
+    font-size: 20px;
+    line-height: 1;
+    color: #B19A21;
+}
+
+.product .pilihanterbaikuntukmu {
+    margin-bottom: 55px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Gilda Display';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1;
+    color: #401B01;
+}
+
+.product .container-5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.product .rectangle {
+    background: #D9D9D9;
+    width: 203px;
+    height: 241.9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .product-name {
+    background: #ffffff;
+    width: 203px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gilda Display';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.3px;
+    line-height: 1.2;
+    color: #501E1E;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.product .button-1 {
+    overflow-wrap: break-word;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+.product .button:hover {
+    background: #914f4b;
+    border: 1px solid #6E2F2C;
+}
+
+.product .button {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: 1px solid #522504;
+    background: #6E2F2C;
+    display: flex;
+    align-self: flex-end;
+    padding: 10px 10px;
+    width: 170px;
+    box-sizing: border-box;
+}
+
+.product .produk {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 /***** HALAMAN EXPERTS *****/
 .experts {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px;
-    margin-top: 10%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgb(245, 243, 243);
+    margin-bottom: 5%;
 }
 
 .container-2 {
@@ -270,7 +398,7 @@ h2 .highlight {
     padding: 20px;
     width: 220px;
     text-align: center;
-    margin: 10px;
+    margin: 35px;
     box-sizing: border-box;
 }
 
@@ -302,36 +430,48 @@ h2 .highlight {
 
 /***** FOOTER *****/
 .footer {
-    background: rgba(68, 15, 14, 0.9); /* Latar belakang tetap */
-    padding: 40px 20px; /* Padding atas/bawah 40px dan kiri/kanan 20px */
+    background: rgba(68, 15, 14, 0.9);
+    padding: 40px;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 100%;
-    box-sizing: border-box; /* Agar padding termasuk dalam ukuran lebar */
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px; /* Konsisten dengan header dan treatment */
+    max-width: 1200px;
     margin-bottom: 20px;
 }
 
 .column {
     flex: 1;
-    margin: 0 20px; /* Margin kiri/kanan 20px */
+    margin: 0 20px;
 }
 
 .our-location,
 .contact-us,
 .social-media {
     font-size: 24px;
-    margin-bottom: 20px; /* Mengurangi jarak bawah */
     color: #B19A21;
+    position: relative;
+}
+
+.our-location::after,
+.contact-us::after,
+.social-media::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #B19A21;
+    position: absolute;
+    bottom: -5px;
+    /* Adjust this value as needed */
+    left: 0;
 }
 
 .locations,
@@ -342,21 +482,6 @@ h2 .highlight {
 .shopee {
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 10px; /* Mengurangi jarak bawah */
-}
-
-.ternellebeaut {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.all-rights-reserved {
-    font-size: 16px;
-}
-
-.working-hours-admin,
-.working-hours-clinic {
-    margin-bottom: 10px; /* Mengurangi jarak bawah */
 }
 
 .footer-content .column {
@@ -369,44 +494,18 @@ h2 .highlight {
     margin: 0;
 }
 
-.line-4,
-.line-5,
-.line-6 {
-    height: 2px;
-    background: #B19A21;
-    width: 200px;
-    top: 80px;
-    position: absolute;
-}
-
-.line-4 {
-    left: 90px;
-}
-
-.line-6 {
-    left: 490px;
-}
-
-.line-5 {
-    right: 260px;
-}
-
 .footer-bottom {
-    background: rgba(68, 15, 14, 0.9);
+    background: #440F0E;
     display: flex;
     justify-content: center;
-    padding: 10px 20px; /* Padding atas/bawah 10px dan kiri/kanan 20px */
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .footer-content-2 {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px; /* Konsisten dengan header dan treatment */
+    max-width: 1200px;
     color: #FFFFFF;
-    align-items: center; /* Meratakan vertikal */
 }
 
 .left-content {
@@ -421,7 +520,71 @@ h2 .highlight {
 }
 
 .logo-img {
-    width: 40px; /* Sesuaikan ukuran logo */
+    width: 100px;
     height: auto;
-    margin-right: 10px;
+}
+
+
+/***** RESERVATION *****/
+.appointment {
+  padding-top: 140px;
+  padding-bottom: 70px;
+  width: 80%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.appointment-online {
+  font-family: 'Gilda Display', serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #401B01;
+  text-align: center;
+}
+
+.line-1 {
+  background: #B19A21;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 20px;
+}
+
+.line-2 {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 400;
+  font-size: 13px;
+  color: #501E1E;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  border-radius: 20px;
+  background: #D9D9D9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
 }
