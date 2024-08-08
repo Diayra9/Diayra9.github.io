@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: 'Gilda Display', serif;
+    background-color: #d8cfbc;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1368px;
+    margin: 0 auto;
+    padding-top: 200px;
+    background-color: #ffffff;
+    padding-bottom: 100px;
+}
+
+.header {
+    text-align: center;
+    font-size: 64px;
+    color: #401b01;
+    margin-bottom: 100px;
+}
+
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.location-card {
+    background-color: #d8cfbc;
+    border-radius: 20px;
+    width: 30%; /* Adjusted to allow 3 cards per row */
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.location-card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.location-name {
+    font-size: 28px; /* Reduced font size */
+    color: #401b01;
+    margin-bottom: 10px;
+}
+
+.location-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    margin-bottom: 5px;
+}
+
+.location-info .icon {
+    width: 20px; /* Icon size */
+    height: 20px;
+    margin-right: 8px; /* Margin to the right of the icon */
+}
+
+.address, .phone {
+    font-size: 18px; /* Font size */
+    color: #401b01;
+    margin: 0;
+    text-align: left; /* Ensure text is left-aligned */
+}
