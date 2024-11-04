@@ -10,7 +10,146 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f4ef;
+            color: #3a2b20;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3a2b20;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .brand-name {
+            font-size: 20px;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            background-color: #8d6e63;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn.white {
+            background-color: #fff;
+            color: #3a2b20;
+            border: 1px solid #8d6e63;
+        }
+
+        .intro-text {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+
+        .highlight {
+            color: #d4a373;
+            font-weight: bold;
+        }
+
+        .treatment-cards {
+            display: flex;
+            overflow-x: scroll;
+            gap: 10px;
+            padding: 10px 10px;
+        }
+
+        .card {
+            flex: 0 0 auto;
+            width: 150px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .certifications {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            font-size: 12px;
+        }
+
+        .certification {
+            text-align: center;
+        }
+
+        .product-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .product {
+            width: 70px;
+            height: 70px;
+            background-color: #e0c3a3;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .action-buttons .btn {
+            padding: 8px 12px;
+            font-size: 12px;
+        }
+    </style>
 </head>
 
 <body>
