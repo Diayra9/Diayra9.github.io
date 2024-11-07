@@ -21,6 +21,7 @@ body {
 .brand-name {
   font-size: 20px;
   color: #fdf7f2;
+  font-family: 'Gilda Display', serif;
 }
 
 .menu-icon {
@@ -31,7 +32,7 @@ body {
 .hero-section {
   position: relative;
   text-align: center;
-  padding: 60px;
+  padding: 50px;
   overflow: hidden;
 }
 
@@ -53,13 +54,12 @@ body {
   font-size: 35px;
   padding: 5px;
   color: #3e2d26;
-  font-family: "Gilda Display-Regular", Helvetica;
+  font-family: 'Gilda Display', serif;
 }
 
 .hero-section p {
   font-size: 12px;
   margin-bottom: 10px;
-  font-weight: bold;
   color: #200e01;
 }
 
@@ -101,10 +101,11 @@ body {
   margin: 20px 0;
   font-size: 16px;
   color: #401b00;
-  font-family: "Gilda Display-Regular", Helvetica;
+  font-family: 'Gilda Display', serif;
+  font-weight: bold;
 }
 
-.intro-text .highlight2 {
+.highlight2 {
   color: #d4a760;
 }
 
@@ -117,10 +118,16 @@ body {
 
 .card {
   width: 100%;
-  text-align: center;
   background-color: #f3dec8;
   border-radius: 15px;
   border: 1px solid #3a1f0e;
+}
+
+.card p {
+  font-family: 'Gilda Display', serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8px;
 }
 
 .card img {
@@ -134,6 +141,7 @@ body {
   gap: 50px;
   margin: 25px;
   font-size: 12px;
+  font-family: 'Gilda Display';
 }
 
 .certification {
@@ -162,11 +170,12 @@ body {
 
 .product-section {
   text-align: left;
-  padding: 10px;
+  padding: 15px;
 }
 
 .product-section p {
   margin-bottom: 5px;
+  margin-left: 10px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
@@ -178,6 +187,7 @@ body {
 
 .product-section h2 {
   margin-bottom: 15px;
+  margin-left: 10px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
@@ -191,27 +201,104 @@ body {
 .products {
   display: flex;
   justify-content: space-around;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .product {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.product-bg {
+  width: 70px;
+  height: 35px;
   background-color: #e0c3a3;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-bg img {
+  width: auto;
+  height: 55px;
+  border-radius: 50%;
+  transform: translateY(-15px);
 }
 
 .action-buttons {
   display: flex;
-  justify-content: center;
   gap: 10px;
-  margin-top: 20px;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.action-buttons .btn {
-  padding: 8px 12px;
-  font-size: 12px;
+.btn-details {
+  padding: 30px 0px;
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: none;
+  color: #5b3714;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.btn-buy {
+  padding: 15px 0px;
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #5b3714;
+  color: white;
+  border-radius: 15px;
+  padding: 8px 15px;
+}
+
+.buy-now:hover {
+  background-color: #4a2d11;
+}
+
+.doctor{
+  padding: 0px 20px;
+}
+
+.doctor-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3d7b3;
+  border: 2px solid #d5a46a;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.doctor-image img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  /* justify-content: flex-start; */
+}
+
+.doctor-info {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.doctor-info h2 {
+  font-size: 1.1em;
+  color: #4b2e1a;
+  margin-bottom: 10px;
+}
+
+.doctor-info p {
+  font-size: 0.9em;
+  color: #8a5a44;
+  margin: 0;
 }
