@@ -26,7 +26,7 @@ body {
 
 .menu-icon {
   font-size: 24px;
-  color: #fdf7f2;
+  color: #ffffff;
 }
 
 .hero-section {
@@ -53,14 +53,14 @@ body {
 .hero-section h1 {
   font-size: 35px;
   padding: 5px;
-  color: #3e2d26;
+  color: #1e1e1e;
   font-family: 'Gilda Display', serif;
 }
 
 .hero-section p {
   font-size: 12px;
   margin-bottom: 10px;
-  color: #200e01;
+  color: #3e2d26;
 }
 
 .hero-section .highlight {
@@ -114,13 +114,14 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   padding: 20px;
+  color: #3e2c1e;
 }
 
 .card {
   width: 100%;
-  background-color: #f3dec8;
+  background-color: #f1d5b5;
   border-radius: 15px;
-  border: 1px solid #3a1f0e;
+  border: 1px solid #c4a484;
 }
 
 .card p {
@@ -152,7 +153,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #dfd8ce;
+  background-color: #C4A484;
   padding: 5px;
   box-sizing: border-box;
   margin-bottom: 5px;
@@ -195,7 +196,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 1;
-  color: #401B01;
+  color: #5b3925;
 }
 
 .products {
@@ -211,9 +212,9 @@ body {
 }
 
 .product-bg {
-  width: 70px;
-  height: 35px;
-  background-color: #e0c3a3;
+  width: 100px;
+  height: 50px;
+  background-color: #d7b89a;
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
   display: flex;
@@ -223,9 +224,9 @@ body {
 
 .product-bg img {
   width: auto;
-  height: 55px;
+  height: 80px;
   border-radius: 50%;
-  transform: translateY(-15px);
+  transform: translateY(-20px);
 }
 
 .action-buttons {
@@ -237,13 +238,13 @@ body {
 
 .btn-details {
   padding: 30px 0px;
-  font-size: 10px;
+  font-size: 12px;
   font-family: Arial, sans-serif;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
   background: none;
-  color: #5b3714;
+  color: #5a2d0c;
   text-decoration: underline;
   font-weight: bold;
 }
@@ -255,14 +256,10 @@ body {
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: #5b3714;
-  color: white;
+  background-color: #5a2d0c;
+  color: #d9d9d9;
   border-radius: 15px;
   padding: 8px 15px;
-}
-
-.buy-now:hover {
-  background-color: #4a2d11;
 }
 
 .doctor{
@@ -273,8 +270,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f3d7b3;
-  border: 2px solid #d5a46a;
+  background-color: #f1d5b5;
+  border: 2px solid #d6a550;
   margin-bottom: 20px;
   border-radius: 10px;
 }
@@ -293,12 +290,12 @@ body {
 
 .doctor-info h2 {
   font-size: 1.1em;
-  color: #4b2e1a;
+  color: #4e342e;
   margin-bottom: 10px;
 }
 
 .doctor-info p {
   font-size: 0.9em;
-  color: #8a5a44;
+  color: #000000;
   margin: 0;
 }
