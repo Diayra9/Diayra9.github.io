@@ -5,11 +5,12 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Gilda Display', serif;
   background-color: #ede0d4;
   color: #3a2b20;
 }
 
+/***** HEADER *****/
 .header {
   display: flex;
   justify-content: space-between;
@@ -21,7 +22,6 @@ body {
 .brand-name {
   font-size: 20px;
   color: #fdf7f2;
-  font-family: 'Gilda Display', serif;
 }
 
 .menu-icon {
@@ -29,6 +29,7 @@ body {
   color: #ffffff;
 }
 
+/***** BANNER *****/
 .hero-section {
   position: relative;
   text-align: center;
@@ -45,7 +46,6 @@ body {
   height: 100%;
   background-image: url('../assets/images/klinik_1.jpeg');
   background-size: cover;
-  /* background-position: 50% 50%; */
   opacity: 0.6;
   z-index: -1;
 }
@@ -54,7 +54,6 @@ body {
   font-size: 35px;
   padding: 5px;
   color: #1e1e1e;
-  font-family: 'Gilda Display', serif;
 }
 
 .hero-section p {
@@ -96,12 +95,12 @@ body {
   font-family: "Inter-Regular", Helvetica;
 }
 
+/***** TEXT *****/
 .intro-text {
   text-align: center;
-  margin: 20px 0;
+  margin-top: 15px;
   font-size: 16px;
   color: #401b00;
-  font-family: 'Gilda Display', serif;
   font-weight: bold;
 }
 
@@ -109,11 +108,12 @@ body {
   color: #d4a760;
 }
 
+/***** TREATMENT *****/
 .treatment-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  padding: 20px;
+  padding: 20px 40px;
   color: #3e2c1e;
 }
 
@@ -125,7 +125,6 @@ body {
 }
 
 .card p {
-  font-family: 'Gilda Display', serif;
   font-weight: bold;
   text-align: center;
   margin-top: 8px;
@@ -136,6 +135,7 @@ body {
   border-radius: 15px;
 }
 
+/***** CERTIFICATIONS *****/
 .certifications {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -169,6 +169,7 @@ body {
   margin: 10px 10px;
 }
 
+/***** PRODUCT *****/
 .product-section {
   text-align: left;
   padding: 15px;
@@ -181,20 +182,20 @@ body {
   align-self: flex-start;
   overflow-wrap: break-word;
   font-family: 'Gilda Display';
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1;
   color: #B19A21;
 }
 
 .product-section h2 {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   margin-left: 10px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
   font-family: 'Gilda Display';
   font-weight: 400;
-  font-size: 15px;
+  font-size: 25px;
   line-height: 1;
   color: #5b3925;
 }
@@ -213,10 +214,10 @@ body {
 
 .product-bg {
   width: 100px;
-  height: 50px;
+  height: 40px;
   background-color: #d7b89a;
-  border-bottom-left-radius: 35px;
-  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,8 +263,10 @@ body {
   padding: 8px 15px;
 }
 
+/***** DOCTOR *****/
 .doctor{
   padding: 0px 20px;
+  font-family: 'Gilda Display';
 }
 
 .doctor-card {
@@ -277,10 +280,9 @@ body {
 }
 
 .doctor-image img {
-  width: 120px;
+  width: 90px;
   height: auto;
   border-radius: 10px;
-  /* justify-content: flex-start; */
 }
 
 .doctor-info {
@@ -298,4 +300,186 @@ body {
   font-size: 0.9em;
   color: #000000;
   margin: 0;
+}
+
+/***** NEWS *****/
+.news-container {
+  margin: 35px auto;
+  padding: 20px;
+  max-width: 1000px;
+  border-radius: 10px;
+}
+
+.news-container h2 {
+  text-align: center;
+  color: #5B3925;
+}
+
+.line {
+  width: 240px;
+  height: 2px;
+  background-color: #401B01;
+  margin: 0px auto 30px auto;
+}
+
+.news {
+  display: flex;
+  justify-content: space-around;
+}
+
+.news-item {
+  background-color: #5B3925;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.news-item h3 {
+  color: #B19A21;
+  font-size: 16px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.news-item p {
+  font-size: 13px;
+  padding-bottom: 15px;
+  text-align: justify;
+}
+
+.news-item button {
+  background-color: #B19A21;
+  border: none;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/***** TESTIMONI *****/
+.testi-container {
+  overflow: hidden;
+  max-width: 100%;
+  margin: 35px auto;
+  padding-bottom: 15px;
+  max-width: 1000px;
+  border-radius: 10px;
+}
+
+.testi-container h2 {
+  text-align: center;
+  color: #B19A21;
+}
+
+.line2 {
+  width: 210px;
+  height: 2px;
+  background-color: #B19A21;
+  margin: 0px auto 30px auto;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+}
+
+.testimonial {
+  width: 180px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #D7B89A;
+}
+
+.testimonial h3 {
+  color: #3A1F0E;
+  font-size: 16px;
+}
+
+.testimonial .service {
+  font-style: italic;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+.testimonial .rating {
+  color: #FFFB00;
+  font-size: 1.3em;
+  padding-bottom: 8px;
+}
+
+.testimonial .text {
+  color: #3A1F0E;
+  font-size: 12px;
+}
+
+.testimonial-slider {
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+  animation: slide 10s linear infinite;
+  width: max-content;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/***** FOOTER *****/
+.footer {
+  background-color: #3A1F0E;
+  color: #FFFFFF;
+  padding: 20px 0;
+  text-align: left;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  padding: 0 10px 20px 10px;
+}
+
+.footer-content div {
+  width: 45%;
+}
+
+.footer h3 {
+  font-size: 18px;
+  border-bottom: 2px solid #FFFFFF;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  border-top: 2px solid #B19A21;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.footer-bottom .mini-text {
+  font-size: 8px;
 }
