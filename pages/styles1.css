@@ -51,7 +51,7 @@ body {
 }
 
 .hero-section h1 {
-  font-size: 35px;
+  font-size: 30px;
   padding: 5px;
   color: #1e1e1e;
 }
@@ -213,7 +213,7 @@ body {
 }
 
 .product-bg {
-  width: 100px;
+  width: 80px;
   height: 40px;
   background-color: #d7b89a;
   border-bottom-left-radius: 100px;
@@ -337,7 +337,7 @@ body {
 
 .news-item h3 {
   color: #B19A21;
-  font-size: 16px;
+  font-size: 15px;
   padding-bottom: 15px;
   text-align: left;
 }
@@ -345,7 +345,7 @@ body {
 .news-item p {
   font-size: 13px;
   padding-bottom: 15px;
-  text-align: justify;
+  text-align: left;
 }
 
 .news-item button {
@@ -461,7 +461,7 @@ body {
 }
 
 .footer p {
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
