@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Gilda Display', serif;
   background-color: #ede0d4;
   color: #3a2b20;
 }
@@ -22,7 +22,6 @@ body {
 .brand-name {
   font-size: 20px;
   color: #fdf7f2;
-  font-family: 'Gilda Display', serif;
 }
 
 .menu-icon {
@@ -55,7 +54,6 @@ body {
   font-size: 35px;
   padding: 5px;
   color: #1e1e1e;
-  font-family: 'Gilda Display', serif;
 }
 
 .hero-section p {
@@ -103,7 +101,6 @@ body {
   margin-top: 15px;
   font-size: 16px;
   color: #401b00;
-  font-family: 'Gilda Display', serif;
   font-weight: bold;
 }
 
@@ -128,7 +125,6 @@ body {
 }
 
 .card p {
-  font-family: 'Gilda Display', serif;
   font-weight: bold;
   text-align: center;
   margin-top: 8px;
@@ -304,4 +300,186 @@ body {
   font-size: 0.9em;
   color: #000000;
   margin: 0;
+}
+
+/***** NEWS *****/
+.news-container {
+  margin: 35px auto;
+  padding: 20px;
+  max-width: 1000px;
+  border-radius: 10px;
+}
+
+.news-container h2 {
+  text-align: center;
+  color: #5B3925;
+}
+
+.line {
+  width: 240px;
+  height: 2px;
+  background-color: #401B01;
+  margin: 0px auto 30px auto;
+}
+
+.news {
+  display: flex;
+  justify-content: space-around;
+}
+
+.news-item {
+  background-color: #5B3925;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.news-item h3 {
+  color: #B19A21;
+  font-size: 16px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.news-item p {
+  font-size: 13px;
+  padding-bottom: 15px;
+  text-align: justify;
+}
+
+.news-item button {
+  background-color: #B19A21;
+  border: none;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/***** TESTIMONI *****/
+.testi-container {
+  overflow: hidden;
+  max-width: 100%;
+  margin: 35px auto;
+  padding-bottom: 15px;
+  max-width: 1000px;
+  border-radius: 10px;
+}
+
+.testi-container h2 {
+  text-align: center;
+  color: #B19A21;
+}
+
+.line2 {
+  width: 210px;
+  height: 2px;
+  background-color: #B19A21;
+  margin: 0px auto 30px auto;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+}
+
+.testimonial {
+  width: 180px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #D7B89A;
+}
+
+.testimonial h3 {
+  color: #3A1F0E;
+  font-size: 16px;
+}
+
+.testimonial .service {
+  font-style: italic;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+.testimonial .rating {
+  color: #FFFB00;
+  font-size: 1.3em;
+  padding-bottom: 8px;
+}
+
+.testimonial .text {
+  color: #3A1F0E;
+  font-size: 12px;
+}
+
+.testimonial-slider {
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+  animation: slide 10s linear infinite;
+  width: max-content;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/***** FOOTER *****/
+.footer {
+  background-color: #3A1F0E;
+  color: #FFFFFF;
+  padding: 20px 0;
+  text-align: left;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  padding: 0 10px 20px 10px;
+}
+
+.footer-content div {
+  width: 45%;
+}
+
+.footer h3 {
+  font-size: 18px;
+  border-bottom: 2px solid #FFFFFF;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  border-top: 2px solid #B19A21;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.footer-bottom .mini-text {
+  font-size: 8px;
 }
