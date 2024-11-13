@@ -10,6 +10,7 @@ body {
   color: #3a2b20;
 }
 
+/***** HEADER *****/
 .header {
   display: flex;
   justify-content: space-between;
@@ -29,6 +30,7 @@ body {
   color: #ffffff;
 }
 
+/***** BANNER *****/
 .hero-section {
   position: relative;
   text-align: center;
@@ -45,7 +47,6 @@ body {
   height: 100%;
   background-image: url('../assets/images/klinik_1.jpeg');
   background-size: cover;
-  /* background-position: 50% 50%; */
   opacity: 0.6;
   z-index: -1;
 }
@@ -96,9 +97,10 @@ body {
   font-family: "Inter-Regular", Helvetica;
 }
 
+/***** TEXT *****/
 .intro-text {
   text-align: center;
-  margin: 20px 0;
+  margin-top: 15px;
   font-size: 16px;
   color: #401b00;
   font-family: 'Gilda Display', serif;
@@ -109,11 +111,12 @@ body {
   color: #d4a760;
 }
 
+/***** TREATMENT *****/
 .treatment-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  padding: 20px;
+  padding: 20px 40px;
   color: #3e2c1e;
 }
 
@@ -136,6 +139,7 @@ body {
   border-radius: 15px;
 }
 
+/***** CERTIFICATIONS *****/
 .certifications {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -169,6 +173,7 @@ body {
   margin: 10px 10px;
 }
 
+/***** PRODUCT *****/
 .product-section {
   text-align: left;
   padding: 15px;
@@ -181,20 +186,20 @@ body {
   align-self: flex-start;
   overflow-wrap: break-word;
   font-family: 'Gilda Display';
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1;
   color: #B19A21;
 }
 
 .product-section h2 {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   margin-left: 10px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
   font-family: 'Gilda Display';
   font-weight: 400;
-  font-size: 15px;
+  font-size: 25px;
   line-height: 1;
   color: #5b3925;
 }
@@ -213,10 +218,10 @@ body {
 
 .product-bg {
   width: 100px;
-  height: 50px;
+  height: 40px;
   background-color: #d7b89a;
-  border-bottom-left-radius: 35px;
-  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,8 +267,10 @@ body {
   padding: 8px 15px;
 }
 
+/***** DOCTOR *****/
 .doctor{
   padding: 0px 20px;
+  font-family: 'Gilda Display';
 }
 
 .doctor-card {
@@ -277,10 +284,9 @@ body {
 }
 
 .doctor-image img {
-  width: 120px;
+  width: 90px;
   height: auto;
   border-radius: 10px;
-  /* justify-content: flex-start; */
 }
 
 .doctor-info {
