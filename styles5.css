@@ -1,0 +1,315 @@
+/* Styles for the registration form */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }/* Styles for the registration form */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.form-container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.membership-online {
+  display: block;
+  font-family: 'Gilda Display', serif;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.line-1 {
+  height: 1px;
+  background-color: #d1d1d1;
+  margin: 20px 0;
+}
+
+.alert {
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.alert .closebtn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 20px;
+  color: #155724;
+  cursor: pointer;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  border-color: #a5a5a5;
+}
+
+.gender-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.gender-options label {
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #666;
+}
+
+.gender-options input[type="radio"] {
+  margin-right: 5px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.gold-button {
+  background-color: #d4af37;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.gold-button:hover {
+  background-color: #c29b30;
+}
+
+.button-container {
+  width: 100%; /* Mengatur container tombol agar lebarnya penuh */
+  margin-top: 20px;
+}
+
+.gold-button {
+  width: 100%; /* Membuat tombol Register selebar container */
+  background-color: #d4af37;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.gold-button:hover {
+  background-color: #c29b30;
+}
+
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  .form-container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reservasi-online {
+    display: block;
+    font-family: 'Gilda Display', serif;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .line-1 {
+    height: 1px;
+    background-color: #d1d1d1;
+    margin: 20px 0;
+  }
+  
+  .alert {
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .alert .closebtn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 20px;
+    color: #155724;
+    cursor: pointer;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="date"]:focus {
+    border-color: #a5a5a5;
+  }
+  
+  .gender-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+  }
+  
+  .gender-options label {
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #666;
+  }
+  
+  .gender-options input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .gold-button {
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .gold-button:hover {
+    background-color: #c29b30;
+  }
+  
+  .button-container {
+    width: 100%; /* Mengatur container tombol agar lebarnya penuh */
+    margin-top: 20px;
+  }
+  
+  .gold-button {
+    width: 100%; /* Membuat tombol Register selebar container */
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+  }
+  
+  .gold-button:hover {
+    background-color: #c29b30;
+  }
+  .location-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    gap: 10px; /* Jarak antar elemen */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.location-options label {
+  color: #a5a5a5;
+}
+
+.location-options input[type="radio"]:checked + label {
+  color: #a5a5a5;
+}
