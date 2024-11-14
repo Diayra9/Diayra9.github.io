@@ -17,6 +17,8 @@ body {
   align-items: center;
   background-color: #3a1f0e;
   padding: 10px 20px;
+  z-index: 10;
+  position: relative;
 }
 
 .brand-name {
@@ -78,24 +80,37 @@ body {
 
 .nav-popup {
   display: none;
-  position: absolute;
-  top: 45px;
-  left: 0;
-  right: 0;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
   background-color: #ede0d4;
-  padding: 20px;
   text-align: center;
   z-index: 1;
+  transition: right 3s ease;
 }
 
 .nav-popup.show {
   display: block;
+  right: 0;
 }
 
 .nav-items {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.nav-items a {
+  color: #c29b30;
+}
+
+.nav-items p {
+  font-size: 12px;
+  padding-bottom: 20px;
+  color: #6d4c41;
 }
 
 .nav-link {
@@ -105,35 +120,38 @@ body {
   font-weight: bold;
 }
 
-.nav-footer {
-  margin-top: 20px;
+.btn-container {
+  padding-top: 3%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .btn-appointment,
 .btn-register {
-  background-color: #c18c5d;
-  border: none;
-  padding: 10px 20px;
-  color: white;
+  color: #c29b30;
+  background-color: #eedebb;
+  border: 2px solid #c29b30;
+  padding: 3px 16px;
   border-radius: 25px;
-  margin: 5px;
   font-size: 16px;
+  font-style: italic;
 }
 
-.btn-register {
-  background-color: #94623e;
+.nav-footer {
+  background-color: #3A1F0E;
+  padding-top: 10px;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-.nav-popup.show {
-  z-index: 1;
-}
-
-body.no-scroll {
-  overflow: hidden;
-}
-
-.overlay.show {
-  display: block;
+.nav-footer p {
+  font-size: 14px;
+  color: #ffffff;
+  padding: 5px 10px;
 }
 
 body.no-scroll {
@@ -146,6 +164,19 @@ body.no-scroll {
   text-align: center;
   padding: 50px;
   overflow: hidden;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-section::before {
@@ -165,12 +196,26 @@ body.no-scroll {
   font-size: 30px;
   padding: 5px;
   color: #1e1e1e;
+  animation: slideInFromLeft 1s ease-out 0.5s forwards;
 }
 
 .hero-section p {
   font-size: 12px;
   margin-bottom: 10px;
   color: #3e2d26;
+  animation: slideInFromLeft 1s ease-out 0.5s forwards;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .hero-section .highlight {
@@ -238,6 +283,7 @@ body.no-scroll {
   border-right: 1px solid #c4a484;
   border-bottom: 1px solid #c4a484;
   padding: 3px 0;
+  height: 50px;
 }
 
 .card img {
@@ -555,15 +601,17 @@ body.no-scroll {
 .footer {
   background-color: #3A1F0E;
   color: #FFFFFF;
-  padding: 20px 0;
   text-align: left;
+  position: absolute;
+  width: 100%;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-around;
-  max-width: 1000px;
-  padding: 0 10px 20px 10px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
 }
 
 .footer-content div {
@@ -588,7 +636,6 @@ body.no-scroll {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
 }
 
 .footer-bottom p {
@@ -602,11 +649,8 @@ body.no-scroll {
 }
 
 
-
+/***** MEMBERSHIP *****/
 .form-container {
-  /* background-color: #fff; */
-  /* width: 80%; */
-  /* max-width: 500px; */
   padding: 30px 60px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
