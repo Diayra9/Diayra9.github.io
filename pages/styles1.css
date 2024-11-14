@@ -257,6 +257,7 @@ body.no-scroll {
   margin-top: 15px;
   font-size: 16px;
   color: #401b00;
+  animation: fadeIn 1.5s ease-out forwards;
 }
 
 .highlight2 {
@@ -741,4 +742,57 @@ input[type="date"]:focus {
   width: 100%;
   margin-top: 35px;
   text-align: center;
+}
+
+
+/***** APPOINTMENT *****/
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-title {
+  display: block;
+  font-family: 'Gilda Display', serif;
+  font-size: 15px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.gender-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.gender-options label {
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #666;
+}
+
+.gender-options input[type="radio"] {
+  margin-right: 5px;
+}
+
+.location-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.location-options label {
+  color: #666;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.location-options input[type="radio"]:checked+label {
+  color: #a5a5a5;
 }
