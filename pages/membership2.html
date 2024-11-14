@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,44 @@
     <link rel="icon" href="path/to/icon.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles2.css" />
+    <link rel="stylesheet" href="styles1.css" />
 </head>
 
 <body>
+    <!----- HEADER ----->
+    <div class="header">
+        <div class="brand-name">Étern<span class="highlight2">e</span>lle</div>
+        <nav class="navbar">
+            <button class="navbar-toggler first-button" type="button" aria-label="Toggle navigation">
+                <div class="animated-icon1"><span></span><span></span><span></span></div>
+            </button>
+        </nav>
+    </div>
+
+    <!----- MENU ----->
+    <div class="nav-popup collapse">
+        <div class="nav-items">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Treatment</a>
+            <a href="#" class="nav-link">Product</a>
+            <a href="#" class="nav-link">Promo</a>
+            <a href="#" class="nav-link">About Us</a>
+        </div>
+        <div class="nav-footer">
+            <button class="btn-appointment">Appointment</button>
+            <button class="btn-register" onclick="location.href='membership2.html'">Register</button>
+        </div>
+    </div>
+
+    <!-- Membership Form -->
     <div class="form-container">
         <span class="membership-online">MEMBERSHIP REGISTRATION</span>
-    <div class="line-1"></div>
+        <div class="line-1"></div>
 
-        <!-- Registration Form -->
-        <form action="/save-membership" method="POST">
+        <form method="POST">
             <div class="input-group">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Your Full Name..." required />
+                <input class="box" type="text" name="name" id="name" placeholder="Your Full Name..." required />
             </div>
 
             <div class="input-group">
@@ -52,9 +78,52 @@
             </div>
 
             <div class="button-container">
-              <button type="submit" class="gold-button">Register</button>
-          </div>          
+                <button type="submit" class="gold-button">Register</button>
+            </div>
         </form>
     </div>
+
+    <!----- FOOTER ----->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="follow-us">
+                <h3>Follow Us :</h3>
+                <p>Telegram:<br><strong>Eternelle_Beaute</strong></p><br>
+                <p>Instagram:<br><strong>@Eternelle_Beaute</strong></p><br>
+                <p>Shopee:<br><strong>Eternelle_Beaute</strong></p><br>
+            </div>
+            <div class="contact-us">
+                <h3>Contact Us :</h3>
+                <p><strong>Working Hour Admin</strong><br>
+                    Sunday - Saturday:<br> 09:00 - 20:00</p><br>
+                <p><strong>Working Hour Clinic</strong><br>
+                    Monday - Friday:<br> 09:00 - 20:00<br>
+                    Saturday & Sunday:<br> 10:00 - 17:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>ÉTERN<span class="highlight2">E</span>LLE B<span class="highlight2">E</span>AUTÉ</p>
+            <p class="mini-text">&copy; 2024. All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.first-button').addEventListener('click', function() {
+            document.querySelector('.animated-icon1').classList.toggle('open');
+
+            const navPopup = document.querySelector('.nav-popup');
+            navPopup.classList.toggle('show');
+
+            const overlay = document.querySelector('.overlay');
+            overlay.classList.toggle('show');
+
+            if (navPopup.classList.contains('show')) {
+                document.body.classList.add('no-scroll');
+            } else {
+                document.body.classList.remove('no-scroll');
+            }
+        });
+    </script>
 </body>
+
 </html>

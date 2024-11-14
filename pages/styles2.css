@@ -38,24 +38,6 @@ body {
   margin: 20px 0;
 }
 
-.alert {
-  padding: 10px;
-  background-color: #d4edda;
-  color: #155724;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.alert .closebtn {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-  font-size: 20px;
-  color: #155724;
-  cursor: pointer;
-}
-
 .input-group {
   margin-bottom: 20px;
 }
