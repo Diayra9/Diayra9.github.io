@@ -663,13 +663,13 @@ body.no-scroll {
   font-family: 'Gilda Display', serif;
   font-size: 15px;
   text-align: center;
-  color: #d4af37;
+  color: #333;
   margin-bottom: 20px;
 }
 
 .line-1 {
   height: 1px;
-  background-color: #d4af37;
+  background-color: #d1d1d1;
   margin: 20px 0;
 }
 
@@ -692,7 +692,7 @@ input[type="date"] {
   width: 100%;
   padding: 6px;
   font-size: 10px;
-  border: 1px solid #000000;
+  border: 1px solid #727171;
   border-radius: 8px;
   outline: none;
   transition: border-color 0.3s;
@@ -760,7 +760,7 @@ input[type="date"]:focus {
   font-family: 'Gilda Display', serif;
   font-size: 15px;
   text-align: center;
-  color: #d4af37;
+  color: #333;
   margin-bottom: 20px;
 }
 
