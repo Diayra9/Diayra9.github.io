@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0 0;
   box-sizing: border-box;
 }
 
@@ -17,8 +17,10 @@ body {
   align-items: center;
   background-color: #3a1f0e;
   padding: 10px 20px;
-  z-index: 10;
-  position: relative;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .brand-name {
@@ -78,6 +80,7 @@ body {
   transform: rotate(-135deg);
 }
 
+/***** MENU *****/
 .nav-popup {
   display: none;
   position: fixed;
@@ -104,20 +107,16 @@ body {
 }
 
 .nav-items a {
-  color: #c29b30;
+  font-size: 18px;
+  color: #D6A550;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .nav-items p {
   font-size: 12px;
   padding-bottom: 20px;
-  color: #6d4c41;
-}
-
-.nav-link {
-  font-size: 18px;
-  color: #6d4c41;
-  text-decoration: none;
-  font-weight: bold;
+  color: #7B4E2D;
 }
 
 .btn-container {
@@ -130,9 +129,9 @@ body {
 
 .btn-appointment,
 .btn-register {
-  color: #c29b30;
-  background-color: #eedebb;
-  border: 2px solid #c29b30;
+  color: #D6A550;
+  background-color: #F1D5B5;
+  border: 2px solid #D6A550;
   padding: 3px 16px;
   border-radius: 25px;
   font-size: 16px;
@@ -163,6 +162,7 @@ body.no-scroll {
   position: relative;
   text-align: center;
   padding: 50px;
+  margin-top: 30px;
   overflow: hidden;
   animation: fadeIn 1.5s ease-out forwards;
 }
@@ -653,6 +653,7 @@ body.no-scroll {
 /***** MEMBERSHIP *****/
 .form-container {
   padding: 30px 60px;
+  margin-top: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -662,13 +663,13 @@ body.no-scroll {
   font-family: 'Gilda Display', serif;
   font-size: 15px;
   text-align: center;
-  color: #333;
+  color: #d4af37;
   margin-bottom: 20px;
 }
 
 .line-1 {
   height: 1px;
-  background-color: #d1d1d1;
+  background-color: #d4af37;
   margin: 20px 0;
 }
 
@@ -759,7 +760,7 @@ input[type="date"]:focus {
   font-family: 'Gilda Display', serif;
   font-size: 15px;
   text-align: center;
-  color: #333;
+  color: #d4af37;
   margin-bottom: 20px;
 }
 
