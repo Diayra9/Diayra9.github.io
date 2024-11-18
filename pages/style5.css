@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilda Display', serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.promo-section {
+    width: 400px;
+    padding: 20px;
+    background-color: #EDE0D4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.line {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: #B1853A;
+}
+
+.promo-section h1 {
+    font-size: 24px;
+    color: #B1853A;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.promo-card {
+    background: url('background1.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.promo-card h2 {
+    font-size: 18px;
+    color: #621313;
+    margin-bottom: 8px;
+}
+
+.promo-card p {
+    font-size: 14px;
+    color: #000000;
+}
+
+.discount {
+    font-size: 16px;
+    color: #B19A21;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+}
+
+.expiry {
+    font-size: 12px;
+    color: #000000;
+    margin-top: 5px;
+}
+
+.promo-description {
+    font-size: 14px;
+    color: #B1853A;
+    margin: 15px 0;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.promo-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #D6A550;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.promo-button:hover {
+    background-color: #D6A550;
+}

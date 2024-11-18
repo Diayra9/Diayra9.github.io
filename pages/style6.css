@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilda Display', serif;
+}
+
+body {
+    font-family: 'Gilda Display', serif;
+    background-color: #fff;
+    color: #EDE0D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+}
+
+
+.treatment-section {
+    width: 400px;
+    background-color: #EDE0D4;
+    padding: 20px;
+    border-radius: 8px;
+    color: #333;
+}
+
+.treatment-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.treatment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.treatment-card {
+    background-color: #D7B89A;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.treatment-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.treatment-card p {
+    margin-top: 5px;
+    color: #000;
+    font-size: 14px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination span {
+    background-color: #D7B89A;
+    color: #333;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination span:hover {
+    background-color: #D7B89A;
+}
