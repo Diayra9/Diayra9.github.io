@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Form - Éternelle Beauté</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+    <!----- HEADER ----->
+    <div class="header">
+        <div class="brand-name">Étern<span class="highlight2">e</span>lle</div>
+        <nav class="navbar">
+            <button class="navbar-toggler first-button" type="button" aria-label="Toggle navigation">
+                <div class="animated-icon1"><span></span><span></span><span></span></div>
+            </button>
+        </nav>
+    </div>
+
+    <!----- MENU ----->
+    <div class="nav-popup collapse">
+        <div class="nav-items">
+            <a href="index.html" class="nav-link">Home</a>
+            <p>Access main features</p>
+
+            <a href="#" class="nav-link">Treatment</a>
+            <p>Discover our best beauty treatments</p>
+
+            <a href="#" class="nav-link">Product</a>
+            <p>Explore personalized beauty products</p>
+
+            <a href="#" class="nav-link">Promo</a>
+            <p>Enjoy exclusive offers</p>
+
+            <a href="#" class="nav-link">About Us</a>
+            <p>Learn more about us</p>
+
+            <div class="btn-container">
+                <button class="btn-appointment" onclick="location.href='reservasi.html'">APPOINTMENT</button>
+                <button class="btn-register" onclick="location.href='membership2.html'">REGISTER</button>
+            </div>
+        </div>
+        <div class="nav-footer">
+            <p>ÉTERN<span class="highlight2">E</span>LLE B<span class="highlight2">E</span>AUTÉ</p>
+        </div>
+    </div>
+
+    <!-- RESERVATION FORM -->
+    <div class="form-container">
+        <span class="reservation-title">RESERVATION FORM</span>
+        <div class="line-1"></div>
+
+        <form method="POST">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name..." required />
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Your Phone Number..." required />
+            </div>
+
+            <div class="input-group">
+                <label>Gender</label>
+                <div class="gender-options">
+                    <label><input type="radio" name="gender" value="female" /> Female</label>
+                    <label><input type="radio" name="gender" value="male" /> Male</label>
+                    <label><input type="radio" name="gender" value="other" /> Other</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="How Old Are You?" required />
+            </div>
+
+            <div class="input-group">
+                <label for="treatment">Choose Treatment</label>
+                <input type="text" id="treatment" name="treatment" placeholder="Select Treatment" required />
+            </div>
+
+            <div class="input-group">
+                <label>Location</label>
+                <div class="location-options">
+                    <label><input type="radio" name="location" value="0" /> Jogja</label>
+                    <label><input type="radio" name="location" value="1" /> Jakarta</label>
+                    <label><input type="radio" name="location" value="2" /> Bandung</label>
+                    <label><input type="radio" name="location" value="3" /> Sidoarjo</label>
+                    <label><input type="radio" name="location" value="4" /> Surakarta</label>
+                    <label><input type="radio" name="location" value="5" /> Surabaya</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="service">Choose Your Service</label>
+                <input type="text" id="service" name="service" placeholder="Select Services" required />
+            </div>
+
+            <div class="input-group">
+                <label for="date">Reservation Date</label>
+                <input type="date" id="date" name="date" required />
+            </div>
+
+            <div class="button-container">
+                <button type="submit" class="gold-button">Reserve</button>
+            </div>
+        </form>
+    </div>
+
+    <!----- FOOTER ----->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="follow-us">
+                <h3>Follow Us :</h3>
+                <p>Telegram:<br><strong>Eternelle_Beaute</strong></p><br>
+                <p>Instagram:<br><strong>@Eternelle_Beaute</strong></p><br>
+                <p>Shopee:<br><strong>Eternelle_Beaute</strong></p><br>
+            </div>
+            <div class="contact-us">
+                <h3>Contact Us :</h3>
+                <p><strong>Working Hour Admin</strong><br>
+                    Sunday - Saturday:<br> 09:00 - 20:00</p><br>
+                <p><strong>Working Hour Clinic</strong><br>
+                    Monday - Friday:<br> 09:00 - 20:00<br>
+                    Saturday & Sunday:<br> 10:00 - 17:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>ÉTERN<span class="highlight2">E</span>LLE B<span class="highlight2">E</span>AUTÉ</p>
+            <p class="mini-text">&copy; 2024. All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.first-button').addEventListener('click', function() {
+            // Toggle the animated icon
+            document.querySelector('.animated-icon1').classList.toggle('open');
+
+            // Toggle the navigation popup
+            const navPopup = document.querySelector('.nav-popup');
+            navPopup.classList.toggle('show');
+
+            // Create overlay if it doesn't exist
+            let overlay = document.querySelector('.overlay');
+            if (!overlay) {
+                overlay = document.createElement('div');
+                overlay.className = 'overlay';
+                document.body.appendChild(overlay);
+            }
+
+            // Toggle overlay visibility
+            overlay.classList.toggle('show');
+
+            // Toggle body scroll
+            if (navPopup.classList.contains('show')) {
+                document.body.classList.add('no-scroll');
+            } else {
+                document.body.classList.remove('no-scroll');
+            }
+
+            // Close the menu when clicking on the overlay
+            overlay.addEventListener('click', function() {
+                navPopup.classList.remove('show');
+                overlay.classList.remove('show');
+                document.body.classList.remove('no-scroll');
+                document.querySelector('.animated-icon1').classList.remove('open'); // Reset animated icon
+            });
+        });
+    </script>
+</body>
+
+</html>

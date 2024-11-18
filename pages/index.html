@@ -1,241 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Header</title>
+    <title>Eternelle Beauté</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles1.css" />
 </head>
 
 <body>
-    <!--- HEADER --->
+    <!----- HEADER ----->
     <div class="header">
-        <div class="header-salma">
-            <div class="eternelle">Étern<span class="highlight">e</span>lle</div>
-            <div class="container">
-                <a href="index.html">Home</a>
-                <a href="#">Membership</a>
-                <a href="#">Treatment</a>
-                <a href="#">Product</a>
-                <a href="#">Promo</a>
-                <button class="appointment-1" onclick="location.href='appointment.html'">MAKE APPOINTMENT</button>
-                <button class="button-6" onclick="location.href='membership.html'">Register</button>
+        <div class="brand-name">Étern<span class="highlight2">e</span>lle</div>
+        <nav class="navbar">
+            <button class="navbar-toggler first-button" type="button" aria-label="Toggle navigation">
+                <div class="animated-icon1"><span></span><span></span><span></span></div>
+            </button>
+        </nav>
+    </div>
+
+    <!----- MENU ----->
+    <div class="nav-popup collapse">
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <p>Access main features</p>
+            
+            <a href="#">Treatment</a>
+            <p>Discover our best beauty treatments</p>
+            
+            <a href="#">Product</a>
+            <p>Explore personalized beauty products</p>
+            
+            <a href="#">Promo</a>
+            <p>Enjoy exclusive offers</p>
+            
+            <a href="#">About Us</a>
+            <p>Learn more about us</p>
+            
+            <div class="btn-container">
+                <button class="btn-appointment" onclick="location.href='reservasi.html'">APPOINTMENT</button>
+                <button class="btn-register" onclick="location.href='membership2.html'">REGISTER</button>
+            </div>
+        </div>
+        <div class="nav-footer">
+            <p>ÉTERN<span class="highlight2">E</span>LLE B<span class="highlight2">E</span>AUTÉ</p>
+        </div>
+    </div>
+
+    <!----- BANNER ----->
+    <div class="hero-section">
+        <h1>Étern<span class="highlight">e</span>lle B<span class="highlight">e</span>auté</h1>
+        <p>Great experience with the best treatment</p>
+        <div class="buttons">
+            <button class="btn-choco">Treatment</button>
+            <button class="btn-white">Location</button>
+            <button class="btn-choco">Product</button>
+        </div>
+    </div>
+
+    <!----- TEXT ----->
+    <div class="intro-text">
+        Presenting <span class="highlight2">Eternal Beauty</span> with a Touch <br>
+        of Professionalism, Aesthetics and Elegance
+    </div>
+
+    <!----- TREATMENT SIDE ----->
+    <div class="treatment-cards">
+        <div class="card">
+            <img src="../assets/images/download_1.jpeg" alt="Deep Cleansing Facial" loading="lazy">
+            <div class="card-content">
+                <p>Deep Cleansing</p><br>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../assets/images/download_171.jpeg" alt="Laser Treatment" loading="lazy">
+            <div class="card-content">
+                <p>Laser Treatment</p><br>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../assets/images/download_241.jpeg" alt="Detox Treatment" loading="lazy">
+            <div class="card-content">
+                <p>Detox Treatment</p><br>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../assets/images/facial.jpg" alt="Hydration Facial" loading="lazy">
+            <div class="card-content">
+                <p>Hydration Facial</p><br>
             </div>
         </div>
     </div>
 
-    <!--- BANNER --->
-    <div class="klinik-1"></div>
-    <div class="rectangle-1"></div>
-    <div class="hero">
-        <h1 class="main-title">Étern<span class="highlight-text">e</span>lle B<span class="highlight-text">e</span>auté
-        </h1>
-        <p class="subtitle">Great experience with the best treatment</p>
-        <div class="cta-buttons">
-            <button class="cta-button">Our Treatment</button>
-            <button class="cta-button location-button">Our Location</button>
-            <button class="cta-button">Our Product</button>
+    <hr class="divider">
+
+    <!----- CERTIFICATIONS / TESTING ----->
+    <div class="certifications">
+        <div class="certification">
+            <img src="../assets/images/halal.png" alt="HALAL MUI" class="certification-logo" loading="lazy">
+            HALAL MUI CERTIFIED
+        </div>
+        <div class="certification">
+            <img src="../assets/images/bpom.png" alt="BPOM RI" class="certification-logo" loading="lazy">
+            BPOM RI CERTIFIED
+        </div>
+        <div class="certification">
+            <img src="../assets/images/hewan.png" alt="Cruelty Free" class="certification-logo" loading="lazy">
+            CRUELTY FREE
+        </div>
+        <div class="certification">
+            <img src="../assets/images/bahan.png" alt="Minimal Ingredients" class="certification-logo" loading="lazy">
+            MINIMAL INGREDIENTS
+        </div>
+        <div class="certification">
+            <img src="../assets/images/bestseller (2).png" alt="Bst Seller Product" class="certification-logo"
+                loading="lazy">
+            BEST PRODUCT
+        </div>
+        <div class="certification">
+            <img src="../assets/images/cht.png" alt="Work On All Skin" class="certification-logo" loading="lazy">
+            WORK ON ALL SKIN
         </div>
     </div>
-    
-    <!--- TREATMENT --->
-    <section class="treatment-section">
-        <div class="container-8">
-            <!-- <img src="../assets/images/logo.png" alt="Deep Cleansing Facial" class="treatment-logo"> -->
-            <h2>Menghadirkan <span class="highlight">Kecantikan Abadi</span> dengan Sentuhan Profesionalisme dan Elegansi</h2>
-            <p class="intro-text">
-                Selamat datang di Eternelle Beauté, tempat di mana kecantikan abadi Anda diwujudkan dengan sempurna. Kami menawarkan
-                berbagai perawatan kecantikan eksklusif yang dirancang untuk mempercantik dan memperbaharui penampilan Anda. Anda akan
-                merasakan transformasi yang memikat. Di Eternelle Beauté, kami percaya bahwa setiap orang memiliki kecantikan unik yang
-                layak untuk dipertahankan dan ditingkatkan. Oleh karena itu, kami menyediakan layanan yang dipersonalisasi sesuai dengan
-                kebutuhan Anda, mulai dari perawatan wajah, tubuh, hingga peremajaan kulit.
-            </p>
-            <div class="treatment-grid">
-                <div class="treatment-card">
-                    <img src="../assets/images/download_1.jpeg" alt="Deep Cleansing Facial"
-                        class="treatment-image">
-                    <div class="treatment-info">
-                        <h3>Deep Cleansing Facial</h3>
-                        <p>Perawatan ini membersihkan kulit secara mendalam.</p>
-                    </div>
+
+    <hr class="divider">
+
+    <!----- PRODUCT SIDE ----->
+    <div class="product-section">
+        <p>PRODUCT RECOMMENDATIONS</p><br>
+        <h2>BEST CHOICE FOR YOU</h2>
+        <div class="products">
+            <div class="product">
+                <div class="product-bg">
+                    <img src="../assets/images/download_removebg_preview_1.png" alt="The Bath Box Barrier Fit"
+                        loading="lazy">
                 </div>
-                <div class="treatment-card">
-                    <img src="../assets/images/download_171.jpeg" alt="Laser Treatment"
-                        class="treatment-image">
-                    <div class="treatment-info">
-                        <h3>Laser Treatment</h3>
-                        <p>Mengatasi berbagai masalah kulit seperti jerawat, pigmentasi, dan kerutan.</p>
-                    </div>
+            </div>
+            <div class="product">
+                <div class="product-bg">
+                    <img src="../assets/images/whats_app_image_20240719_at_160921_b_692860_aremovebg_preview_1.png"
+                        alt="Purbasari Lulur Mandi" loading="lazy">
                 </div>
-                <div class="treatment-card">
-                    <img src="../assets/images/download_241.jpeg"
-                        alt="Detox Treatment" class="treatment-image">
-                    <div class="treatment-info">
-                        <h3>Detox Treatment</h3>
-                        <p>Perawatan untuk membersihkan racun dari tubuh.</p>
-                    </div>
-                </div>
-                <div class="treatment-card">
-                    <img src="../assets/images/facial.jpg" alt="Hydration Facial" class="treatment-image">
-                    <div class="treatment-info">
-                        <h3>Hydration Facial</h3>
-                        <p>Memberikan kelembapan mendalam pada kulit.</p>
-                    </div>
+            </div>
+            <div class="product">
+                <div class="product-bg">
+                    <img src="../assets/images/whats_app_image_20240719_at_161039_dd_307_dcc_removebg_preview_1.png"
+                        alt="Daviena Skincare Hand Body Dosting" loading="lazy">
                 </div>
             </div>
         </div>
-    </section>
+        <div class="action-buttons">
+            <button class="btn-details">More Details</button>
+            <button class="btn-buy">Buy Now</button>
+        </div>
+    </div>
 
-    <!--- PRODUCT --->
-    <div class="product">
-        <div class="produk">
-            <div class="rekomendasi-produk">
-                REKOMENDASI PRODUK
+    <!----- DOCTOR SIDE ----->
+    <div class="doctor">
+        <div class="doctor-card">
+            <div class="doctor-image">
+                <img src="../assets/images/fu_1-removebg (1).png" alt="Dr. Reza Graha" loading="lazy">
             </div>
-            <div class="pilihanterbaikuntukmu">
-                PILIHAN TERBAIK UNTUKMU
+            <div class="doctor-info">
+                <h2>Dr. Reza Graha, Sp.KK</h2>
+                <p>(Skin and Venereology Specialist)</p>
             </div>
-            <div class="group-3">
-                <div class="container-5">
-                    <div class="product-item">
-                        <div class="rectangle">
-                            <img src="../assets/images/download_removebg_preview_1.png" alt="The Bath Box Barrier Fit"
-                                class="product-image">
-                        </div>
-                        <div class="product-name">The Bath Box Barrier Fit</div>
-                    </div>
-                    <div class="product-item">
-                        <div class="rectangle">
-                            <img src="../assets/images/whats_app_image_20240719_at_160837_b_3_aee_2_da_removebg_preview_1.png"
-                                alt="Whitelab Hydrating Sleeping Mask" class="product-image">
-                        </div>
-                        <div class="product-name">Whitelab Hydrating Sleeping Mask</div>
-                    </div>
-                    <div class="product-item">
-                        <div class="rectangle">
-                            <img src="../assets/images/whats_app_image_20240719_at_160921_b_692860_aremovebg_preview_1.png"
-                                alt="Daviena Skincare Hand Body Dosting" class="product-image">
-                        </div>
-                        <div class="product-name">Daviena Skincare Hand Body Dosting</div>
-                    </div>
-                    <div class="product-item">
-                        <div class="rectangle">
-                            <img src="../assets/images/whats_app_image_20240719_at_1610008_f_3_b_47_d_7_removebg_preview_1.png"
-                                alt="Purbasari Lulur Mandi" class="product-image">
-                        </div>
-                        <div class="product-name">Purbasari Lulur Mandi</div>
-                    </div>
-                    <div class="product-item">
-                        <div class="rectangle">
-                            <img src="../assets/images/whats_app_image_20240719_at_161039_dd_307_dcc_removebg_preview_1.png"
-                                alt="Ellips Hair Vitamin Silky Black" class="product-image">
-                        </div>
-                        <div class="product-name">Ellips Hair Vitamin Silky Black</div>
-                    </div>
-                </div>
-            </div> <br><br>
-            <div class="button">
-                <span class="button-1">
-                    PRODUK LAINNYA &gt;&gt;
-                </span>
+        </div>
+
+        <div class="doctor-card">
+            <div class="doctor-image">
+                <img src="../assets/images/fu_11-removebg.png" alt="Dr. Maya Kusuma" loading="lazy">
+            </div>
+            <div class="doctor-info">
+                <h2>Dr. Alina Pratiwi, M.B.B.Ch.</h2>
+                <p>(Aesthetic Doctor)</p>
             </div>
         </div>
     </div>
 
-    <!--- EXPERTS --->
-    <div class="experts">
-        <div class="container-2">
-            <div class="meet-our-experts">
-                Meet Our Experts
+    <!----- NEWS SIDE ----->
+    <div class="news-container">
+        <h2>Update and Latest News</h2>
+        <div class="line"></div>
+        <div class="news">
+            <div class="news-item">
+                <h3>New Service Just Launch</h3>
+                <p>We will introduces a new facial treatments with the latest and newest technology.</p>
+                <button>Learn More</button>
             </div>
-            <div class="line"></div>
-            <div class="container-3">
-                <div class="expert">
-                    <img src="../assets/images/fu_1.jpeg" alt="Dr. Reza Graha" class="expert-image">
-                    <div class="expert-info">
-                        <h3>Dr. Reza Graha, M.D, Sp.KK</h3>
-                        <p>Dermatologist</p>
-                    </div>
+            <div class="news-item">
+                <h3>Expansion of Clinic Branches</h3>
+                <p>Today, we officially opens the 6th branch in the Bandung. Check the discount Now!</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <!----- TESTI SIDE ----->
+    <div class="testi-container">
+        <h2>What Our Clients Say</h2>
+        <div class="line2"></div>
+        <div class="testimonials">
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <h3>Emily Johnson</h3>
+                    <p class="service">Brightening Facial</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="text">"The Brightening Facial made a huge difference in my skin!
+                        My complexion looks so much more radiant and even-toned..."</p>
                 </div>
-                <div class="expert">
-                    <img src="../assets/images/fu_11.jpeg" alt="Dr. Alina Pratiwi" class="expert-image">
-                    <div class="expert-info">
-                        <h3>Dr. Alina Pratiwi, M.B.B.Ch.</h3>
-                        <p>Aesthetic Doctor</p>
-                    </div>
+                <div class="testimonial">
+                    <h3>Sarah Williams</h3>
+                    <p class="service">Dark Circle Treatment</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="text">"I've struggled with dark circles for years, but after trying the Dark Circle
+                        Treatment, they've
+                        significantly reduced..."</p>
                 </div>
-                <div class="expert">
-                    <img src="../assets/images/download_2.jpeg" alt="Dr. Clara Riana" class="expert-image">
-                    <div class="expert-info">
-                        <h3>Clara Riana, Cosmetologist</h3>
-                        <p>Beauty Therapy</p>
-                    </div>
+                <div class="testimonial">
+                    <h3>Olivia Carter</h3>
+                    <p class="service">Deep Cleansing Facial</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="text">"The Deep Cleansing Facial was exactly what my skin needed! It removed all the
+                        impurities and left my skin feeling
+                        smooth...."</p>
                 </div>
-                <div class="expert">
-                    <img src="../assets/images/image.jpeg" alt="Dr. Maya Kusuma" class="expert-image">
-                    <div class="expert-info">
-                        <h3>Maya Kusuma, Esthetician</h3>
-                        <p>Skin Specialist</p>
-                    </div>
+                <div class="testimonial">
+                    <h3>John Michael Doe</h3>
+                    <p class="service">Anti-Dandruff Treatment</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="text">"I used to deal with constant dandruff, but the Anti-Dandruff Treatment changed
+                        that! My scalp feels so much healthier,...."</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Emily Johnson</h3>
+                    <p class="service">Brightening Facial</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="text">"The Brightening Facial made a huge difference in my skin!
+                        My complexion looks so much more radiant and even-toned..."</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Sarah Williams</h3>
+                    <p class="service">Dark Circle Treatment</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="text">"I've struggled with dark circles for years, but after trying the Dark Circle
+                        Treatment, they've
+                        significantly reduced..."</p>
+                </div>
+                <div class="testimonial">
+                    <h3>Olivia Carter</h3>
+                    <p class="service">Deep Cleansing Facial</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="text">"The Deep Cleansing Facial was exactly what my skin needed! It removed all the
+                        impurities and left my skin feeling
+                        smooth...."</p>
+                </div>
+                <div class="testimonial">
+                    <h3>John Michael Doe</h3>
+                    <p class="service">Anti-Dandruff Treatment</p>
+                    <p class="rating">★★★★★</p>
+                    <p class="text">"I used to deal with constant dandruff, but the Anti-Dandruff Treatment changed
+                        that! My scalp feels so much healthier,...."</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--- FOOTER --->
+    <!----- FOOTER ----->
     <div class="footer">
         <div class="footer-content">
-            <div class="column our-location-column">
-                <span class="our-location">Our Location</span>
-                <div class="line-4"></div><br>
-                <p class="locations">
-                    <strong>Surabaya</strong><br>
-                    Jl. Siwalankerto Permai No.1A, Siwalankerto, Kec. Wonocolo<br><br>
-                    <strong>Bandung</strong><br>
-                    Kawasan Summarecon, LevelUp Building, Jl. Sentra Raya Barat, Kec. Gedebage<br><br>
-                    <strong>Salatiga</strong><br>
-                    Jl. Kalisombo No.18, Salatiga, Kec. Sidorejo
-                </p>
+            <div class="follow-us">
+                <h3>Follow Us :</h3>
+                <p>Telegram:<br><strong>Eternelle_Beaute</strong></p><br>
+                <p>Instagram:<br><strong>@Eternelle_Beaute</strong></p><br>
+                <p>Shopee:<br><strong>Eternelle_Beaute</strong></p><br>
             </div>
-            <div class="column contact-us-column">
-                <span class="contact-us">Contact Us</span>
-                <div class="line-5"></div><br>
-                <p class="working-hours-admin">
-                    <strong>Working Hour Admin</strong><br>
-                    Sunday - Saturday: 09:00 - 20:00
-                </p> <br>
-                <p class="working-hours-clinic">
-                    <strong>Working Hour Clinic</strong><br>
-                    Monday - Friday: 09:00 - 20:00<br>
-                    Saturday & Sunday: 10:00 - 17:00
-                </p>
+            <div class="contact-us">
+                <h3>Contact Us :</h3>
+                <p><strong>Working Hour Admin</strong><br>
+                    Sunday - Saturday:<br> 09:00 - 20:00</p><br>
+                <p><strong>Working Hour Clinic</strong><br>
+                    Monday - Friday:<br> 09:00 - 20:00<br>
+                    Saturday & Sunday:<br> 10:00 - 17:00</p>
             </div>
-            <div class="column social-media-column">
-                <span class="social-media">Social Media</span>
-                <div class="line-6"></div><br>
-                <p class="contact-number">WhatsApp: +62 858-5973-0416</p>
-                <p class="instagram">Instagram: @Eternelle_Beaute</p>
-                <p class="shopee">Shopee: Eternelle_Beaute</p>
-            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>ÉTERN<span class="highlight2">E</span>LLE B<span class="highlight2">E</span>AUTÉ</p>
+            <p class="mini-text">&copy; 2024. All Rights Reserved</p>
         </div>
     </div>
 
+    <script>
+    document.querySelector('.first-button').addEventListener('click', function () {
+            // Toggle the animated icon
+            document.querySelector('.animated-icon1').classList.toggle('open');
 
-    <!--- FOOTER BOTTOM --->
-    <div class="footer-bottom">
-        <div class="footer-content-2">
-            <div class="left-content">
-                <img src="../assets/images/logo-2.png" alt="Logo" class="logo-img">
-                <p class="ternellebeaut">Étern<span class="highlight">e</span>lle B<span class="highlight">e</span>auté</p>
-            </div>
-            <span class="all-rights-reserved">© 2024. All Rights Reserved</span>
-        </div>
-    </div>
+            // Toggle the navigation popup
+            const navPopup = document.querySelector('.nav-popup');
+            navPopup.classList.toggle('show');
+
+            // Create overlay if it doesn't exist
+            let overlay = document.querySelector('.overlay');
+            if (!overlay) {
+                overlay = document.createElement('div');
+                overlay.className = 'overlay';
+                document.body.appendChild(overlay);
+            }
+
+            // Toggle overlay visibility
+            overlay.classList.toggle('show');
+
+            // Toggle body scroll
+            if (navPopup.classList.contains('show')) {
+                document.body.classList.add('no-scroll');
+            } else {
+                document.body.classList.remove('no-scroll');
+            }
+
+            // Close the menu when clicking on the overlay
+            overlay.addEventListener('click', function () {
+                navPopup.classList.remove('show');
+                overlay.classList.remove('show');
+                document.body.classList.remove('no-scroll');
+                document.querySelector('.animated-icon1').classList.remove('open'); // Reset animated icon
+            });
+        });
+    </script>
 </body>
 
 </html>
