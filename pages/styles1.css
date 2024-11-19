@@ -1,39 +1,182 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Gilda Display', serif;
   background-color: #ede0d4;
   color: #3a2b20;
 }
 
+/***** HEADER *****/
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #3a1f0e;
   padding: 10px 20px;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .brand-name {
   font-size: 20px;
   color: #fdf7f2;
-  font-family: 'Gilda Display', serif;
 }
 
-.menu-icon {
-  font-size: 24px;
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+
+.animated-icon1 {
+  width: 25px;
+  height: 13px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.animated-icon1 span {
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  border-radius: 9px;
+  transition: 0.25s ease-in-out;
+}
+
+.animated-icon1 span:nth-child(1) {
+  top: 0;
+}
+
+.animated-icon1 span:nth-child(2) {
+  top: 6px;
+}
+
+.animated-icon1 span:nth-child(3) {
+  top: 12px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+  top: 6px;
+  transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.animated-icon1.open span:nth-child(3) {
+  top: 6px;
+  transform: rotate(-135deg);
+}
+
+/***** MENU *****/
+.nav-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ede0d4;
+  text-align: center;
+  z-index: 1;
+  transition: right 3s ease;
+}
+
+.nav-popup.show {
+  display: block;
+  right: 0;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.nav-items a {
+  font-size: 18px;
+  color: #D6A550;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-items p {
+  font-size: 12px;
+  padding-bottom: 20px;
+  color: #7B4E2D;
+}
+
+.btn-container {
+  padding-top: 3%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn-appointment,
+.btn-register {
+  color: #D6A550;
+  background-color: #F1D5B5;
+  border: 2px solid #D6A550;
+  padding: 3px 16px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.nav-footer {
+  background-color: #3A1F0E;
+  padding-top: 10px;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-footer p {
+  font-size: 14px;
   color: #ffffff;
+  padding: 5px 10px;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
+/***** BANNER *****/
 .hero-section {
   position: relative;
   text-align: center;
   padding: 50px;
+  margin-top: 30px;
   overflow: hidden;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-section::before {
@@ -45,22 +188,34 @@ body {
   height: 100%;
   background-image: url('../assets/images/klinik_1.jpeg');
   background-size: cover;
-  /* background-position: 50% 50%; */
   opacity: 0.6;
   z-index: -1;
 }
 
 .hero-section h1 {
-  font-size: 35px;
+  font-size: 30px;
   padding: 5px;
   color: #1e1e1e;
-  font-family: 'Gilda Display', serif;
+  animation: slideInFromLeft 1s ease-out 0.5s forwards;
 }
 
 .hero-section p {
   font-size: 12px;
   margin-bottom: 10px;
   color: #3e2d26;
+  animation: slideInFromLeft 1s ease-out 0.5s forwards;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .hero-section .highlight {
@@ -74,7 +229,7 @@ body {
 }
 
 .btn-choco {
-  padding: 10px 15px;
+  padding: 0px 15px;
   background-color: #3a1f0e;
   color: #fff;
   border: none;
@@ -85,7 +240,7 @@ body {
 }
 
 .btn-white {
-  padding: 10px 15px;
+  padding: 8px 15px;
   background-color: #fff;
   font-weight: bold;
   color: #3a1f0e;
@@ -96,46 +251,54 @@ body {
   font-family: "Inter-Regular", Helvetica;
 }
 
+/***** TEXT *****/
 .intro-text {
   text-align: center;
-  margin: 20px 0;
+  margin-top: 15px;
   font-size: 16px;
   color: #401b00;
-  font-family: 'Gilda Display', serif;
-  font-weight: bold;
+  animation: fadeIn 1.5s ease-out forwards;
 }
 
 .highlight2 {
   color: #d4a760;
 }
 
+/***** TREATMENT *****/
 .treatment-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  padding: 20px;
+  padding: 20px 40px;
   color: #3e2c1e;
 }
 
 .card {
-  width: 100%;
   background-color: #f1d5b5;
   border-radius: 15px;
-  border: 1px solid #c4a484;
+  overflow: hidden;
 }
 
-.card p {
-  font-family: 'Gilda Display', serif;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 8px;
+.card-content {
+  border-left: 1px solid #c4a484;
+  border-right: 1px solid #c4a484;
+  border-bottom: 1px solid #c4a484;
+  padding: 3px 0;
+  height: 50px;
 }
 
 .card img {
   width: 100%;
-  border-radius: 15px;
+  display: block;
+  border-radius: 15%;
 }
 
+.card p {
+  text-align: center;
+  margin: 8px 0;
+}
+
+/***** CERTIFICATIONS *****/
 .certifications {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -150,8 +313,8 @@ body {
 }
 
 .certification-logo {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: #C4A484;
   padding: 5px;
@@ -169,6 +332,7 @@ body {
   margin: 10px 10px;
 }
 
+/***** PRODUCT *****/
 .product-section {
   text-align: left;
   padding: 15px;
@@ -181,20 +345,20 @@ body {
   align-self: flex-start;
   overflow-wrap: break-word;
   font-family: 'Gilda Display';
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1;
   color: #B19A21;
 }
 
 .product-section h2 {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   margin-left: 10px;
   display: inline-block;
   align-self: flex-start;
   overflow-wrap: break-word;
   font-family: 'Gilda Display';
   font-weight: 400;
-  font-size: 15px;
+  font-size: 25px;
   line-height: 1;
   color: #5b3925;
 }
@@ -212,11 +376,11 @@ body {
 }
 
 .product-bg {
-  width: 100px;
-  height: 50px;
+  width: 80px;
+  height: 40px;
   background-color: #d7b89a;
-  border-bottom-left-radius: 35px;
-  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,8 +426,10 @@ body {
   padding: 8px 15px;
 }
 
+/***** DOCTOR *****/
 .doctor{
   padding: 0px 20px;
+  font-family: 'Gilda Display';
 }
 
 .doctor-card {
@@ -277,10 +443,9 @@ body {
 }
 
 .doctor-image img {
-  width: 120px;
+  width: 90px;
   height: auto;
   border-radius: 10px;
-  /* justify-content: flex-start; */
 }
 
 .doctor-info {
@@ -298,4 +463,337 @@ body {
   font-size: 0.9em;
   color: #000000;
   margin: 0;
+}
+
+/***** NEWS *****/
+.news-container {
+  margin: 35px auto;
+  padding: 20px;
+  max-width: 1000px;
+  border-radius: 10px;
+}
+
+.news-container h2 {
+  text-align: center;
+  color: #5B3925;
+}
+
+.line {
+  width: 240px;
+  height: 2px;
+  background-color: #401B01;
+  margin: 0px auto 30px auto;
+}
+
+.news {
+  display: flex;
+  justify-content: space-around;
+}
+
+.news-item {
+  background-color: #5B3925;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.news-item h3 {
+  color: #B19A21;
+  font-size: 14px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.news-item p {
+  font-size: 11px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.news-item button {
+  background-color: #B19A21;
+  border: none;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+/***** TESTIMONI *****/
+.testi-container {
+  overflow: hidden;
+  max-width: 100%;
+  margin: 35px auto;
+  padding-bottom: 15px;
+  max-width: 1000px;
+  border-radius: 10px;
+}
+
+.testi-container h2 {
+  text-align: center;
+  color: #B19A21;
+}
+
+.line2 {
+  width: 210px;
+  height: 2px;
+  background-color: #B19A21;
+  margin: 0px auto 30px auto;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+}
+
+.testimonial {
+  width: 180px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #D7B89A;
+}
+
+.testimonial h3 {
+  color: #3A1F0E;
+  font-size: 16px;
+}
+
+.testimonial .service {
+  font-style: italic;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+.testimonial .rating {
+  color: #FFFB00;
+  font-size: 1.3em;
+  padding-bottom: 8px;
+}
+
+.testimonial .text {
+  color: #3A1F0E;
+  font-size: 12px;
+}
+
+.testimonial-slider {
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+  animation: slide 10s linear infinite;
+  width: max-content;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/***** FOOTER *****/
+.footer {
+  background-color: #3A1F0E;
+  color: #FFFFFF;
+  text-align: left;
+  position: absolute;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.footer-content div {
+  width: 45%;
+}
+
+.footer h3 {
+  font-size: 18px;
+  border-bottom: 2px solid #FFFFFF;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  border-top: 2px solid #B19A21;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.footer-bottom .mini-text {
+  font-size: 8px;
+}
+
+
+/***** MEMBERSHIP *****/
+.form-container {
+  padding: 30px 60px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.membership-online {
+  display: block;
+  font-family: 'Gilda Display', serif;
+  font-size: 15px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.line-1 {
+  height: 1px;
+  background-color: #d1d1d1;
+  margin: 20px 0;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+  padding: 6px;
+  font-size: 10px;
+  border: 1px solid #727171;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+  border-color: #a5a5a5;
+}
+
+.gender-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.gender-options label {
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #666;
+}
+
+.gender-options input[type="radio"] {
+  margin-right: 5px;
+}
+
+.gold-button {
+  background-color: #d4af37;
+  color: white;
+  border: none;
+  padding: 8px 100px;
+  font-size: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.gold-button:hover {
+  background-color: #c29b30;
+}
+
+.button-container {
+  width: 100%;
+  margin-top: 35px;
+  text-align: center;
+}
+
+
+/***** APPOINTMENT *****/
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-title {
+  display: block;
+  font-family: 'Gilda Display', serif;
+  font-size: 15px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.gender-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.gender-options label {
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #666;
+}
+
+.gender-options input[type="radio"] {
+  margin-right: 5px;
+}
+
+.location-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.location-options label {
+  color: #666;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.location-options input[type="radio"]:checked+label {
+  color: #a5a5a5;
 }
