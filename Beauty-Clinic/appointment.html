@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beauty-Clinic/appointment.html</title>
+    <link rel="icon" href="assets/images/loogo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <!--- HEADER --->
+    <div class="header">
+        <div class="header-salma">
+            <div class="eternelle">Étern<span class="highlight">e</span>lle</div>
+            <div class="container">
+                <a href="index.html">Home</a>
+                <a href="display-treatment.html">Treatment</a>
+                <a href="display-product.html">Product</a>
+                <a href="promo.html">Promo</a>
+                <a href="about-us.html">About Us</a>
+                <button class="appointment-1" onclick="location.href='appointment.html'">MAKE APPOINTMENT</button>
+                <button class="button-6" onclick="location.href='membership.html'">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!--- ISI --->
+    <div class="appointment">
+        <span class="appointment-online">APPOINTMENT ONLINE</span>
+        <div class="line-1"></div>
+        <img class="line-2" src="assets/vectors/line_2_x2.svg" />
+
+        <form method="POST" enctype="multipart/form-data">
+            <div class="form-container">
+                <div class="form-column">
+                    <div class="form-group">
+                        <label class="full-name">Full Name :</label>
+                        <input type="text" class="input-field" name="name" placeholder="Your Full Name..." required />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="no-telp">Phone Number :</label>
+                        <input type="number" class="input-field" name="phone_number" placeholder="Your Phone Number..." required />
+                    </div>
+
+                    <div class="form-group">
+                        <label class="your-gender">Your Gender :</label>
+                        <select name="gender" class="select-field" required>
+                            <option disabled selected>--Select Gender--</option>
+                            <option value="2">Other</option>
+                            <option value="1">Man</option>
+                            <option value="0">Woman</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="your-age">Your Age :</label>
+                        <input type="number" class="input-field" name="age" placeholder="How Old Are You?" required />
+                    </div>
+                </div>
+
+                <div class="form-column">
+                    <div class="form-group">
+                        <label class="choose-treatment">Choose Treatment :</label>
+                        <div class="control">
+                            <input class="input-field" type="text" id="stateInput" placeholder="Select treatment:" readonly />
+                            <input type="hidden" name="treatment_id" id="treatmentId">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="location">Location :</label>
+                        <select name="location" class="select-field" required>
+                            <option disabled selected>--Select Location--</option>
+                            <option value="5">Surabaya</option>
+                            <option value="4">Surakarta</option>
+                            <option value="3">Sidoarjo</option>
+                            <option value="2">Bandung</option>
+                            <option value="1">Jakarta</option>
+                            <option value="0">Jogja</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="choose-your-service">Choose Your Service :</label>
+                        <select name="doctor" class="select-field" required>
+                            <option disabled selected>--Select Doctor--</option>
+                            <option value="1">Aesthetic Doctor</option>
+                            <option value="0">Beautician</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="reservation-date">Reservation Date :</label>
+                        <input type="date" class="input-field" name="date" required />
+                    </div>
+                </div>
+            </div><br>
+            <div class="control">
+                <button type="submit" class="button">Reserve Now</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Treatment Pop Up -->
+    <div id="treatmentModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Select Treatment</h4>
+                <button id="closeModal" class="modal-close">&times;</button>
+            </div>
+            <div class="treatment-list">
+                <div class="treatment-item">
+                    <img src="assets/images/Carbon Laser Facial Sharjah.jpeg" alt="Carbon Laser Facial" />
+                    <p>Carbon Laser Facial</p>
+                    <p>Rp. 353.000,00</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="assets/images/download_1.jpeg" alt="Deep Cleansing Facial" />
+                    <p>Deep Cleansing Facial</p>
+                    <p>Rp. 876.000,00</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="assets/images/download_171.jpeg" alt="Brightening Facial" />
+                    <p>Brightening Facial</p>
+                    <p>Rp. 655.000,00</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="assets/images/download_241.jpeg" alt="Hydrating Facial" />
+                    <p>Hydrating Facial</p>
+                    <p>Rp. 1.000.000,00</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="assets/images/Refreshing HydraFacial.jpeg" alt="Hair Smoothing Treatment" />
+                    <p>Hair Smoothing Treatment</p>
+                    <p>Rp. 555.000,00</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="assets/images/facial.jpg" alt="Anti Acne Treatment" />
+                    <p>Anti Acne Treatment</p>
+                    <p>Rp. 400.000,00</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="assets/images/Free Photo _ Closeup of woman getting back massage with detox herbal compresses at spa salon.jpeg" alt="Aromatherapy Body Massage" />
+                    <p>Aromatherapy Body Massage</p>
+                    <p>Rp. 1.250.000,00</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="assets/images/about-us5.png" alt="Ultimate Anti-Aging Therapy" />
+                    <p>Ultimate Anti-Aging Therapy</p>
+                    <p>Rp. 750.000,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--- FOOTER --->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="column contact-us-column">
+                <span class="contact-us">Contact Us</span>
+                <div class="line-5"></div><br>
+                <p class="working-hours-admin">
+                    <strong>Working Hour Admin</strong><br>
+                    Sunday - Saturday: 09:00 - 20:00
+                </p> <br>
+                <p class="working-hours-clinic">
+                    <strong>Working Hour Clinic</strong><br>
+                    Monday - Friday: 09:00 - 20:00<br>
+                    Saturday & Sunday: 10:00 - 17:00
+                </p>
+            </div>
+            <div class="column social-media-column">
+                <span class="social-media">Social Media</span>
+                <div class="line-6"></div><br>
+                <p class="contact-number">Telegram: Eternelle_Beaute</p>
+                <p class="instagram">Instagram: @Eternelle_Beaute</p>
+                <p class="shopee">Shopee: Eternelle_Beaute</p>
+            </div>
+            <div class="column our-location-column">
+                <span class="our-location">Our Central Location</span>
+                <div class="line-4"></div><br>
+                <p class="locations">
+                    <strong>Surabaya</strong>
+                    Jl. Siwalankerto Permai No.1A, Siwalankerto, Kec. Wonocolo<br><br>
+                    <strong>Bandung</strong>
+                    Jl. Mohamad Toha 08, Kawasan Summarecon, Kec. Gedebage<br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--- FOOTER BOTTOM --->
+    <div class="footer-bottom">
+        <div class="footer-content-2">
+            <div class="left-content">
+                <img src="assets/images/logo-2.png" alt="Logo" class="logo-img">
+                <p class="ternellebeaut">Étern<span class="highlight">e</span>lle B<span
+                        class="highlight">e</span>auté</p>
+            </div>
+            <span class="all-rights-reserved">© 2024. All Rights Reserved</span>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('stateInput').addEventListener('click', function () {
+            document.getElementById('treatmentModal').style.display = 'block';
+        });
+
+        document.getElementById('closeModal').addEventListener('click', function () {
+            document.getElementById('treatmentModal').style.display = 'none';
+        });
+
+        window.onclick = function (event) {
+            if (event.target == document.getElementById('treatmentModal')) {
+                document.getElementById('treatmentModal').style.display = 'none';
+            }
+        }
+
+        document.querySelectorAll('.treatment-item').forEach(function (item) {
+            item.addEventListener('click', function () {
+                var treatmentId = this.getAttribute('data-id');
+                var treatmentName = this.getAttribute('data-name');
+                document.getElementById('stateInput').value = treatmentName;
+                document.getElementById('treatmentId').value = treatmentId;
+                document.getElementById('treatmentModal').style.display = 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>

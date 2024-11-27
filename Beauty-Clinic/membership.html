@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Membership Registration - Éternelle Beauté</title>
+    <link rel="icon" href="assets/images/loogo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <!--- HEADER --->
+    <div class="header">
+        <div class="header-salma">
+            <div class="eternelle">Étern<span class="highlight">e</span>lle</div>
+            <div class="container">
+                <a href="index.html">Home</a>
+                <a href="display-treatment.html">Treatment</a>
+                <a href="display-product.html">Product</a>
+                <a href="promo.html">Promo</a>
+                <a href="about-us.html">About Us</a>
+                <button class="appointment-1" onclick="location.href='appointment.html'">MAKE APPOINTMENT</button>
+                <button class="button-6" onclick="location.href='membership.html'">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!--- ISI --->
+    <div class="membership">
+        <span class="membership-online">MEMBERSHIP REGISTRATION</span>
+        <div class="line-1"></div>
+        <img class="line-2" src="assets/vectors/line_2_x2.svg" />
+
+        <form method="POST" enctype="multipart/form-data">
+            <div class="container-1">
+                <div class="form-section">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="Your Full Name..." required />
+                    </div>
+                    <div class="input-group">
+                        <label for="gender">Gender</label>
+                        <div class="gender-options" name="gender">
+                            <label><input type="radio" name="gender" value="0" /> Female</label>
+                            <label><input type="radio" name="gender" value="1" /> Male</label>
+                            <label><input type="radio" name="gender" value="2" /> Other</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone</label>
+                        <input type="number" name="no_phone" placeholder="Your Phone Number..." required />
+                    </div>
+                    <div class="input-group">
+                        <label for="address">Address</label>
+                        <input type="text" name="address" placeholder="Your Address..." required />
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Your Email Here..." required />
+                    </div>
+                    <div class="input-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" name="birthday" required />
+                    </div>
+                    <div class="button-container">
+                        <button class="gold-button">Register</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--- FOOTER --->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="column contact-us-column">
+                <span class="contact-us">Contact Us</span>
+                <div class="line-5"></div><br>
+                <p class="working-hours-admin">
+                    <strong>Working Hour Admin</strong><br>
+                    Sunday - Saturday: 09:00 - 20:00
+                </p> <br>
+                <p class="working-hours-clinic">
+                    <strong>Working Hour Clinic</strong><br>
+                    Monday - Friday: 09:00 - 20:00<br>
+                    Saturday & Sunday: 10:00 - 17:00
+                </p>
+            </div>
+            <div class="column social-media-column">
+                <span class="social-media">Social Media</span>
+                <div class="line-6"></div><br>
+                <p class="contact-number">Telegram: Eternelle_Beaute</p>
+                <p class="instagram">Instagram: @Eternelle_Beaute</p>
+                <p class="shopee">Shopee: Eternelle_Beaute</p>
+            </div>
+            <div class="column our-location-column">
+                <span class="our-location">Our Central Location</span>
+                <div class="line-4"></div><br>
+                <p class="locations">
+                    <strong>Surabaya</strong>
+                    Jl. Siwalankerto Permai No.1A, Siwalankerto, Kec. Wonocolo<br><br>
+                    <strong>Bandung</strong>
+                    Jl. Mohamad Toha 08, Kawasan Summarecon, Kec. Gedebage<br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--- FOOTER BOTTOM --->
+    <div class="footer-bottom">
+        <div class="footer-content-2">
+            <div class="left-content">
+                <img src="assets/images/logo-2.png" alt="Logo" class="logo-img">
+                <p class="ternellebeaut">Étern<span class="highlight">e</span>lle B<span
+                        class="highlight">e</span>auté</p>
+            </div>
+            <span class="all-rights-reserved">© 2024. All Rights Reserved</span>
+        </div>
+    </div>
+</body>
+
+</html>
