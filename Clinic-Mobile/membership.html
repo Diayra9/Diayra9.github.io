@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Membership Registration - Éternelle Beauté</title>
+    <link rel="icon" href="assets/images/eternelle.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <!----- HEADER ----->
+    <div class="header">
+        <div class="brand-name">Étern<span class="highlight2">e</span>lle</div>
+        <nav class="navbar">
+            <button class="navbar-toggler first-button" type="button" aria-label="Toggle navigation">
+                <div class="animated-icon1"><span></span><span></span><span></span></div>
+            </button>
+        </nav>
+    </div>
+
+    <!----- MENU ----->
+    <div class="nav-popup collapse">
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <p>Access main features</p>
+
+            <a href="treatment.html">Treatment</a>
+            <p>Discover our best beauty treatments</p>
+
+            <a href="product.html">Product</a>
+            <p>Explore personalized beauty products</p>
+
+            <a href="promo.html">Promo</a>
+            <p>Enjoy exclusive offers</p>
+
+            <a href="about-us.html">About Us</a>
+            <p>Learn more about us</p>
+
+            <div class="btn-container">
+                <button class="btn-appointment" onclick="location.href='reservation.html'">APPOINTMENT</button>
+                <button class="btn-register" onclick="location.href='membership.html'">REGISTER</button>
+            </div>
+        </div>
+        <div class="nav-footer">
+            <p>ÉTERN<span class="highlight2">E</span>LLE B<span class="highlight2">E</span>AUTÉ</p>
+        </div>
+    </div>
+
+    <!----- CONTENT ----->
+    <div class="layouts">
+        <div class="form-container">
+            <span class="membership-online">MEMBERSHIP REGISTRATION</span>
+            <div class="line-1"></div>
+
+            <form method="POST" enctype="multipart/form-data">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input class="box" type="text" name="name" placeholder="Your Full Name..." required />
+                </div>
+
+                <div class="input-group">
+                    <label for="gender">Gender</label>
+                    <div class="gender-options" name="gender">
+                        <label><input type="radio" name="gender" value="0"/> Female</label>
+                        <label><input type="radio" name="gender" value="1"/> Male</label>
+                        <label><input type="radio" name="gender" value="2"/> Other</label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="no_phone">Phone</label>
+                    <input type="text" name="no_phone" placeholder="Your Phone Number..." required />
+                </div>
+
+                <div class="input-group">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" placeholder="Your Address..." required />
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Your Email Here..." required />
+                </div>
+
+                <div class="input-group">
+                    <label for="birthday">Date of Birth</label>
+                    <input type="date" name="birthday" placeholder="Select a date..." required />
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" class="gold-button">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!----- FOOTER ----->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="follow-us">
+                <h3>Follow Us :</h3>
+                <p>Telegram:<br><strong>Eternelle_Beaute</strong></p><br>
+                <p>Instagram:<br><strong>@Eternelle_Beaute</strong></p><br>
+                <p>Shopee:<br><strong>Eternelle_Beaute</strong></p><br>
+            </div>
+            <div class="contact-us">
+                <h3>Contact Us :</h3>
+                <p><strong>Working Hour Admin</strong><br>
+                    Sunday - Saturday:<br> 09:00 - 20:00</p><br>
+                <p><strong>Working Hour Clinic</strong><br>
+                    Monday - Friday:<br> 09:00 - 20:00<br>
+                    Saturday & Sunday:<br> 10:00 - 17:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>ÉTERN<span class="highlight2">E</span>LLE B<span class="highlight2">E</span>AUTÉ</p>
+            <p class="mini-text">&copy; 2024. All Rights Reserved</p>
+        </div>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

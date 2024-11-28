@@ -262,7 +262,7 @@ body {
 }
 
 .klinik-1 {
-    background: url('assets/images/klinik_1.jpeg') 50% / cover no-repeat;
+    background: url('../assets/images/klinik_1.jpeg') 50% / cover no-repeat;
     position: absolute;
     left: 0;
     right: 0;
@@ -1549,11 +1549,11 @@ label {
 }
 
 .promo-card {
-    background: url('assets/images/bg-promo5.jpeg') no-repeat center center;
+    background: url('../assets/images/bg-promo5.jpeg') no-repeat center center;
 }
 
 .promo-card2 {
-    background: url('assets/images/bg-promo3.jpeg') no-repeat center center;
+    background: url('../assets/images/bg-promo3.jpeg') no-repeat center center;
 }
 
 .promo-card::before,

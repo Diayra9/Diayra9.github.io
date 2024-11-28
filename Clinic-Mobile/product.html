@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Display Products - Éternelle Beauté</title>
+    <link rel="icon" href="assets/images/eternelle.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <!----- HEADER ----->
+    <div class="header">
+        <div class="brand-name">Étern<span class="highlight2">e</span>lle</div>
+        <nav class="navbar">
+            <button class="navbar-toggler first-button" type="button" aria-label="Toggle navigation">
+                <div class="animated-icon1"><span></span><span></span><span></span></div>
+            </button>
+        </nav>
+    </div>
+
+    <!----- MENU ----->
+    <div class="nav-popup collapse">
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <p>Access main features</p>
+
+            <a href="treatment.html">Treatment</a>
+            <p>Discover our best beauty treatments</p>
+
+            <a href="product.html">Product</a>
+            <p>Explore personalized beauty products</p>
+
+            <a href="promo.html">Promo</a>
+            <p>Enjoy exclusive offers</p>
+
+            <a href="about-us.html">About Us</a>
+            <p>Learn more about us</p>
+
+            <div class="btn-container">
+                <button class="btn-appointment" onclick="location.href='reservation.html'">APPOINTMENT</button>
+                <button class="btn-register" onclick="location.href='membership.html'">REGISTER</button>
+            </div>
+        </div>
+        <div class="nav-footer">
+            <p>ÉTERN<span class="highlight2">E</span>LLE B<span class="highlight2">E</span>AUTÉ</p>
+        </div>
+    </div>
+
+    <!----- CONTENT ----->
+    <div class="layouts">
+        <div class="product-section">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card" onclick="location.href='show-product/feet-protector.html'">
+                    <img src="assets/images/download_removebg_preview_1.png" alt="TBB Feet Protector" loading="lazy" />
+                    <p>TBB Feet Protector</p>
+                    <p class="stock">3 in stock</p>
+                    <p class="price">Rp. 25.000,00</p>
+                </div>
+                <div class="product-card" onclick="location.href='show-product/hair-vitamin.html'">
+                    <img src="assets/images/whats_app_image_20240719_at_160837_b_3_aee_2_da_removebg_preview_1.png" alt="Ellips Hair Vitamin" loading="lazy" />
+                    <p>Ellips Hair Vitamin</p>
+                    <p class="stock">9 in stock</p>
+                    <p class="price">Rp. 9.000,00</p>
+                </div>
+                <div class="product-card" onclick="location.href='show-product/daviena-cream.html'">
+                    <img src="assets/images/whats_app_image_20240719_at_161039_dd_307_dcc_removebg_preview_1.png" alt="Daviena Cream" loading="lazy" />
+                    <p>Daviena Cream</p>
+                    <p class="stock">3 in stock</p>
+                    <p class="price">Rp. 17.000,00</p>
+                </div>
+                <div class="product-card" onclick="location.href='show-product/purbasari.html'">
+                    <img src="assets/images/purbasari lulur mandi pengantin.png" alt="Purbasari Bath Scrub" loading="lazy" />
+                    <p>Purbasari Bath Scrub</p>
+                    <p class="stock">10 in stock</p>
+                    <p class="price">Rp. 29.000,00</p>
+                </div>
+            </div>
+            <div class="pagination">
+                <span><a href="product.html">&laquo;</a></span>
+                <span><a href="product.html" class="active">1</a></span>
+                <span><a href="product-2.html">2</a></span>
+                <span><a href="product-2.html">&raquo;</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!----- FOOTER ----->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="follow-us">
+                <h3>Follow Us :</h3>
+                <p>Telegram:<br><strong>Eternelle_Beaute</strong></p><br>
+                <p>Instagram:<br><strong>@Eternelle_Beaute</strong></p><br>
+                <p>Shopee:<br><strong>Eternelle_Beaute</strong></p><br>
+            </div>
+            <div class="contact-us">
+                <h3>Contact Us :</h3>
+                <p><strong>Working Hour Admin</strong><br>
+                    Sunday - Saturday:<br> 09:00 - 20:00</p><br>
+                <p><strong>Working Hour Clinic</strong><br>
+                    Monday - Friday:<br> 09:00 - 20:00<br>
+                    Saturday & Sunday:<br> 10:00 - 17:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>ÉTERN<span class="highlight2">E</span>LLE B<span class="highlight2">E</span>AUTÉ</p>
+            <p class="mini-text">&copy; 2024. All Rights Reserved</p>
+        </div>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
